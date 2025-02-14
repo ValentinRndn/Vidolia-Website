@@ -1,8 +1,6 @@
 <template>
   <div class="app-container flex flex-col ">
-  <Navbar />
   <NuxtPage /> 
-  <Footer />
 </div>
 </template>
 

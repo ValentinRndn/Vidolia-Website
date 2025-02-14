@@ -23,9 +23,8 @@ module.exports = {
         'elzaBold': ['ElzaBold', 'sans-serif'],
         'elzaLight': ['ElzaLight', 'sans-serif'],
       },
-      backgroundImage: { 
-        'mainBanner': "url('~/assets/images/index/mainBanner.png')",
-        'contactBanner': "url('/assets/images/index/contactBanner.png')"
+      backgroundImage: {
+        'gradient-vertical': 'linear-gradient(to top, transparent, rgba(0, 0, 255, 0.5) 0%, transparent 40%)',
       },
 
 
