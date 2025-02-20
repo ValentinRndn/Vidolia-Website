@@ -3,8 +3,8 @@ export default defineNuxtConfig({
     head: {
       title: 'Vidolia',
       meta: [
-        { name: 'description', content: 'Kleora est un service clé en main pour vous accompagner dans la gestion des biens d\'un proche disparu.' },
-        { name: 'keywords', content: 'Kleroa, décès, service, biens, revente, accompagnement, respect, aides' },
+        { name: 'description', content: '' },
+        { name: 'keywords', content: '' },
         { name: 'author', content: 'Vidolia' },
         // { name: 'google-site-verification', content: '_FfpdtV8gFxPxXoyaD-uodgnn0dWitziWmvZul0S31M' }, 
       ],
