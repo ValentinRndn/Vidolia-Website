@@ -24,7 +24,8 @@ module.exports = {
         'elzaLight': ['ElzaLight', 'sans-serif'],
       },
       backgroundImage: {
-        'gradient-vertical': 'linear-gradient(to top, transparent, rgba(0, 0, 255, 0.5) 0%, transparent 40%)',
+        'gradient-vertical': 'linear-gradient(to top, #01032c, #012899 100%)',
+         'landing': "url('/assets/images/index/bg-landing.webp')",
       },
 
 
