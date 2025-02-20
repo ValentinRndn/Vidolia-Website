@@ -26,6 +26,11 @@ module.exports = {
       backgroundImage: {
         'gradient-vertical': 'linear-gradient(to top, #01032c, #012899 100%)',
          'landing': "url('/assets/images/index/bg-landing.webp')",
+         'server-card': 'linear-gradient(to top, #1e40af,  5%,#0f172a 100%)',
+         'logo-server-card': 'linear-gradient(to top, #1e40af,  30%,#0f172a 100%)',
+
+         'button-gradient': 'linear-gradient(to right, #1e40af,  50%,#0f172a 100%)'
+
       },
 
 

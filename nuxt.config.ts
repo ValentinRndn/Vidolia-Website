@@ -1,12 +1,12 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Kleora - La clé pour alléger votre esprit',
+      title: 'Vidolia',
       meta: [
         { name: 'description', content: 'Kleora est un service clé en main pour vous accompagner dans la gestion des biens d\'un proche disparu.' },
         { name: 'keywords', content: 'Kleroa, décès, service, biens, revente, accompagnement, respect, aides' },
-        { name: 'author', content: 'Kleora' },
-        { name: 'google-site-verification', content: '_FfpdtV8gFxPxXoyaD-uodgnn0dWitziWmvZul0S31M' }, 
+        { name: 'author', content: 'Vidolia' },
+        // { name: 'google-site-verification', content: '_FfpdtV8gFxPxXoyaD-uodgnn0dWitziWmvZul0S31M' }, 
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.webp' }, // Favicon

@@ -1,48 +1,47 @@
 <template>
-    <nav class="flex justify-between items-center px-[40px] py-4 font-elzaRegular">
-      <!-- Logo -->
-      <div class="left-navbar-container">
-        <RouterLink to="/">
-        <img
-          class="w-[150px] object-cover"
-          src="/assets/images/navbar/logo_long.webp"
-          alt="Logo Kleora"
-        />
-    </RouterLink>
-      </div>
+
+    <nav class="fixed w-full z-20 bg-navy-900/80 backdrop-blur-md flex justify-center items-center py-6">
   
       <!-- Desktop Navigation -->
       <div class="mid-navbar-container flex md:hidden">
-        <ul class="flex gap-10">
+        <ul class="flex gap-20">
           <li>
             <a href="#about"
-              class="bg-secondary-100 px-4 py-2 rounded-[30px] transition duration-300 ease-in-out transform hover:bg-secondary-200 hover:scale-105 hover:shadow-lg"
-              >A propos</a
+              class="text-slate-400 text-xl"
+              >Page</a
             >
           </li>
           <li>
             <a href="#services"
-              class="bg-secondary-100 px-4 py-2 rounded-[30px] transition duration-300 ease-in-out transform hover:bg-secondary-200 hover:scale-105 hover:shadow-lg"
-              >Nos services</a
+              class="text-slate-400 text-xl"
+              >Page</a
+            >
+          </li>
+          <li>
+            <RouterLink to="/" class="text-white text-2xl">
+              Logo
+        <!-- <img
+          class="w-[150px] object-cover"
+          src=""
+          alt="Logo Vidolia"
+        /> -->
+    </RouterLink>
+          </li>
+          <li>
+            <a href="#partners"
+              class="text-slate-400 text-xl"
+              >Page</a
             >
           </li>
           <li>
             <a href="#partners"
-              class="bg-secondary-100 px-4 py-2 rounded-[30px] transition duration-300 ease-in-out transform hover:bg-secondary-200 hover:scale-105 hover:shadow-lg"
-              >Partenaires</a
+              class="text-slate-400 text-xl"
+              >Page</a
             >
           </li>
         </ul>
       </div>
-  
-      <!-- Desktop Button -->
-      <div class="right-navbar-container flex xl:hidden">
-        <a href="#contact">
-        <button class="bg-primary-300 text-white px-4 py-2 rounded-[30px] transition duration-300 ease-in-out transform hover:bg-primary-200 hover:scale-105 hover:shadow-lg">
-          Contact
-        </button>
-    </a>
-      </div>
+
   
       <!-- Mobile Burger Icon -->
       <div class="burger-menu hidden md:flex">
