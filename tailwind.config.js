@@ -27,12 +27,10 @@ module.exports = {
         'gradient-vertical': 'linear-gradient(to top, #01032c, #012899 100%)',
          'landing': "url('/assets/images/index/bg-landing.webp')",
          'tebexCard': "url('/assets/images/index/backgroundTebex.png')",
-
+         'blueTexture': "url('/assets/images/index/bgBleu.png')",
          'server-card': 'linear-gradient(to top, #1e40af,  5%,#0f172a 100%)',
          'server-card-bottom': 'linear-gradient(to bottom, #1e40af,  5%,#0f172a 100%)',
-
          'logo-server-card': 'linear-gradient(to top, #1e40af,  30%,#0f172a 100%)',
-
          'button-gradient': 'linear-gradient(to right, #1e40af,  50%,#0f172a 100%)'
 
       },
