@@ -82,7 +82,7 @@
 
       <section class="py-52 bg-navy-900 ">
 
-        <div class="w-[80%] bg p-6 rounded-lg mx-auto flex gap-16 justify-center items-center bg-server-card border border-blue-500 z-20">
+        <div class="w-[80%] bg p-6 rounded-lg mx-auto flex gap-16 justify-center items-center bg-server-card border border-blue-500 z-20 md:flex-col">
           <div class="title-container flex flex-col z-20 ">
           <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-5xl font-bold">Payez en <br>toute <br> sécurité</h2>
           <p class="text-5xl text-white uppercase ">Avec Tebex</p>

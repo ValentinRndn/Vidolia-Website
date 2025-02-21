@@ -1,6 +1,6 @@
 <template>
-  <div class="app-container flex flex-col ">
-    <Navbar />
+  <div class="app-container flex flex-col overflow-hidden ">
+    <!-- <Navbar /> -->
   <NuxtPage /> 
 </div>
 </template>
