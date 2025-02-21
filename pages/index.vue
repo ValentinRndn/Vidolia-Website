@@ -48,13 +48,13 @@
 
 
       <!-- Servers Section -->
-      <section class="py-20 bg-navy-900 -mt-32">
+      <section class="pt-20 bg-navy-900 -mt-32">
         <div class="w-[90%] mx-auto">
           <div class="grid grid-cols-2 sm:grid-cols-1 gap-32 w-[55%] mx-auto ">
-            <div class="p-6 rounded-lg bg-server-card hover:shadow-xl hover:shadow-blue-500/10 transition-all z-50 relative pb-10">
-              <svg xmlns="http://www.w3.org/2000/svg" class="text-white -mt-14 mx-auto bg-logo-server-card p-4 rounded-full " width="80" height="80" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M467.51 248.83c-18.4-83.18-45.69-136.24-89.43-149.17A91.5 91.5 0 0 0 352 96c-26.89 0-48.11 16-96 16s-69.15-16-96-16a99 99 0 0 0-27.2 3.66C89 112.59 61.94 165.7 43.33 248.83c-19 84.91-15.56 152 21.58 164.88c26 9 49.25-9.61 71.27-37c25-31.2 55.79-40.8 119.82-40.8s93.62 9.6 118.66 40.8c22 27.41 46.11 45.79 71.42 37.16c41.02-14.01 40.44-79.13 21.43-165.04Z"/><circle cx="292" cy="224" r="20" fill="currentColor"/><path fill="currentColor" d="M336 288a20 20 0 1 1 20-19.95A20 20 0 0 1 336 288"/><circle cx="336" cy="180" r="20" fill="currentColor"/><circle cx="380" cy="224" r="20" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 176v96m48-48h-96"/></svg>
-              <h3 class="text-2xl font-bold text-white mb-4">Serveur #1</h3>
-              <p class="text-gray-400 mb-4">Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.</p>
+            <div class="p-6 rounded-lg bg-server-card hover:shadow-xl hover:shadow-blue-500/10 transition-all z-50 relative pb-10 border border-blue-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white absolute right-8 top-6 " width="40" height="40" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M467.51 248.83c-18.4-83.18-45.69-136.24-89.43-149.17A91.5 91.5 0 0 0 352 96c-26.89 0-48.11 16-96 16s-69.15-16-96-16a99 99 0 0 0-27.2 3.66C89 112.59 61.94 165.7 43.33 248.83c-19 84.91-15.56 152 21.58 164.88c26 9 49.25-9.61 71.27-37c25-31.2 55.79-40.8 119.82-40.8s93.62 9.6 118.66 40.8c22 27.41 46.11 45.79 71.42 37.16c41.02-14.01 40.44-79.13 21.43-165.04Z"/><circle cx="292" cy="224" r="20" fill="currentColor"/><path fill="currentColor" d="M336 288a20 20 0 1 1 20-19.95A20 20 0 0 1 336 288"/><circle cx="336" cy="180" r="20" fill="currentColor"/><circle cx="380" cy="224" r="20" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 176v96m48-48h-96"/></svg>
+              <h3 class="text-3xl font-bold text-white mb-4">Serveur #1</h3>
+              <p class="text-gray-400 mb-4 text-xl">Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.</p>
               <div class="connected-players absolute right-8 items-center justify-center  ">
               <span class="point-players"></span>
               <p class="text-gray-400 ml-5">En ligne: 123</p>
@@ -62,10 +62,10 @@
             </div>
 
 
-            <div class="p-6 rounded-lg bg-server-card hover:shadow-xl hover:shadow-blue-500/10 transition-all z-50 relative ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="text-white -mt-14 mx-auto bg-logo-server-card p-4 rounded-full" width="80" height="80" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M467.51 248.83c-18.4-83.18-45.69-136.24-89.43-149.17A91.5 91.5 0 0 0 352 96c-26.89 0-48.11 16-96 16s-69.15-16-96-16a99 99 0 0 0-27.2 3.66C89 112.59 61.94 165.7 43.33 248.83c-19 84.91-15.56 152 21.58 164.88c26 9 49.25-9.61 71.27-37c25-31.2 55.79-40.8 119.82-40.8s93.62 9.6 118.66 40.8c22 27.41 46.11 45.79 71.42 37.16c41.02-14.01 40.44-79.13 21.43-165.04Z"/><circle cx="292" cy="224" r="20" fill="currentColor"/><path fill="currentColor" d="M336 288a20 20 0 1 1 20-19.95A20 20 0 0 1 336 288"/><circle cx="336" cy="180" r="20" fill="currentColor"/><circle cx="380" cy="224" r="20" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 176v96m48-48h-96"/></svg>
-              <h3 class="text-2xl font-bold text-white mb-4">Serveur #2</h3>
-              <p class="text-gray-400 mb-4">Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.</p>
+            <div class="p-6 rounded-lg bg-server-card hover:shadow-xl hover:shadow-blue-500/10 transition-all z-50 relative pb-10 border border-blue-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white absolute right-8 top-6 " width="40" height="40" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M467.51 248.83c-18.4-83.18-45.69-136.24-89.43-149.17A91.5 91.5 0 0 0 352 96c-26.89 0-48.11 16-96 16s-69.15-16-96-16a99 99 0 0 0-27.2 3.66C89 112.59 61.94 165.7 43.33 248.83c-19 84.91-15.56 152 21.58 164.88c26 9 49.25-9.61 71.27-37c25-31.2 55.79-40.8 119.82-40.8s93.62 9.6 118.66 40.8c22 27.41 46.11 45.79 71.42 37.16c41.02-14.01 40.44-79.13 21.43-165.04Z"/><circle cx="292" cy="224" r="20" fill="currentColor"/><path fill="currentColor" d="M336 288a20 20 0 1 1 20-19.95A20 20 0 0 1 336 288"/><circle cx="336" cy="180" r="20" fill="currentColor"/><circle cx="380" cy="224" r="20" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 176v96m48-48h-96"/></svg>
+              <h3 class="text-3xl font-bold text-white mb-4">Serveur #2</h3>
+              <p class="text-gray-400 mb-4 text-xl">Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.</p>
               <div class="connected-players absolute right-8 items-center justify-center  ">
               <span class="point-players"></span>
               <p class="text-gray-400 ml-5">En ligne: 123</p>
@@ -74,17 +74,19 @@
 
           </div>
         </div>
+        
       </section>
   
       <!-- Payment Section -->
-      <section class="py-20 bg-navy-900">
+      <div class="absolute left-0 w-[150rem] h-[40rem] bg-gradient-to-r from-blue-800/70 to-transparent blur-[100px] -translate-x-1/2 z-0"></div>
 
+      <section class="py-52 bg-navy-900 ">
 
-        <div class="w-[80%] p-6 rounded-lg mx-auto flex gap-16 justify-center items-center bg-server-card border border-blue-500">
-          <div class="title-container flex flex-col">
+        <div class="w-[80%] bg p-6 rounded-lg mx-auto flex gap-16 justify-center items-center bg-server-card border border-blue-500 z-20">
+          <div class="title-container flex flex-col z-20 ">
           <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-5xl font-bold">Payez en <br>toute <br> sécurité</h2>
-          <p class="text-5xl text-white uppercase">Avec Tebex</p>
-          <p class="text-gray-400 mt-2">Mastercard, Visa, Paypal et bien d'autres...</p>
+          <p class="text-5xl text-white uppercase ">Avec Tebex</p>
+          <p class="text-gray-400 mt-2 text-xl">Mastercard, Visa, Paypal et bien d'autres...</p>
           <button class=" bg-gradient-to-r from-blue-500 to-blue-800 w-fit mt-4">
             <div class="svg-wrapper-1 ">
               <div class="svg-wrapper">
@@ -98,28 +100,49 @@
               <img id="card-banc" src="/assets/images/index/creditcard_copie.webp" alt="credit card mockup " class="w-[35em] -mt-20">
         </div>
       </section>
+
+
+
+            <!-- Pres Server Section  -->
+            <section class="pb-52 bg-navy-900">
+              <div class="absolute right-0 w-[150rem] h-[30rem] bg-gradient-to-l from-blue-800/70 to-transparent blur-[100px] z-0"></div>
+
+              <div class="w-[80%] bgp-6 rounded-lg mx-auto flex gap-16 justify-center items-center  ">
+                <div class="left-container z-20">
+                  <img src="../assets/images/index/background-card.webp" alt="server pic" class="rounded-lg ">
+                </div>
+
+                <div class="right-container z-20">
+                  <p class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-xl font-bold mb-4">Vidolia</p>
+                  <h2 class="text-white uppercase text-5xl font-bold mb-4">Une communauté <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800">Garry's mod </span>fondée sur le monde de Demon Slayer</h2>
+                  <p class="text-gray-400 text-xl">Sur le serveur vous pourrez incarner un Démon comme un pourfendeur et accomplir des missions ou même faire des combats entre vous. À vous de montrer votre force et d’imposer votre supériorité dans des évènements de prise de territoires ! Mais qui sera le plus fort des mangeurs d’hommes ou des chasseurs de démons !
+                      Notre serveur a été créé avec nos mains pour vous offrir une expérience de jeu exceptionnelle!</p>
+                </div>
+                
+              </div>
+              </section>
   
       <!-- Team Section -->
-      <section class="py-20 bg-navy-800">
-        <div class="w-[90%] mx-auto">
-          <h2 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-white text-center mb-16">Notre Équipe</h2>
+      <section class="pb-52 bg-server-card">
+        <div class="w-[80%] mx-auto">
+          <h2 class="text-white uppercase text-5xl font-bold mb-24 text-center">Notre équipe</h2>
           <div class="grid sm:grid-cols-2 grid-cols-4 gap-8">
-            <div class="p-6 rounded-2xl bg-navy-700 text-center">
-              <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20"></div>
+            <div class="p-6 rounded-lg bg-navy-900 text-center border border-blue-500">
+              <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 "></div>
               <h3 class="text-xl font-bold text-white mb-2">NekoChan</h3>
               <p class="text-blue-400">Fondateur</p>
             </div>
-            <div class="p-6 rounded-2xl bg-navy-700 text-center">
+            <div class="p-6 rounded-lg bg-navy-900 text-center border border-blue-500">
               <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20"></div>
               <h3 class="text-xl font-bold text-white mb-2">Zenitsu</h3>
               <p class="text-blue-400">Admin</p>
             </div>
-            <div class="p-6 rounded-2xl bg-navy-700 text-center">
+            <div class="p-6 rounded-lg bg-navy-900 text-center border border-blue-500">
               <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20"></div>
               <h3 class="text-xl font-bold text-white mb-2">Tanjiro</h3>
               <p class="text-blue-400">Modérateur</p>
             </div>
-            <div class="p-6 rounded-2xl bg-navy-700 text-center">
+            <div class="p-6 rounded-lg bg-navy-900 text-center border border-blue-500">
               <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20"></div>
               <h3 class="text-xl font-bold text-white mb-2">Inosuke</h3>
               <p class="text-blue-400">Développeur</p>
