@@ -14,23 +14,23 @@
     </p>
     <div class="flex flex-row lg:flex-row gap-4">
 
-      <button class="bg-[#1e40af]">
+      <a class="bg-[#1e40af]">
   <div class="svg-wrapper-1 ">
     <div class="svg-wrapper">
       <svg xmlns="http://www.w3.org/2000/svg" id="svg-play" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"/></svg>
     </div>
   </div>
   <span>Jouer</span>
-</button>
+</a>
 
-<button class="bg-navy-800">
+<a class="bg-navy-800" href="https://discord.gg/vidoliads" target="_blank">
   <div class="svg-wrapper-1">
     <div class="svg-wrapper">
       <svg xmlns="http://www.w3.org/2000/svg" id="svg-discord" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
     </div>
   </div>
   <span>Discord</span>
-</button>
+</a>
     </div>
   </div>
 
@@ -203,7 +203,7 @@
   }
 
   /* From Uiverse.io by adamgiebl */ 
-button {
+a {
   font-family: inherit;
   font-size: 20px;
   color: white;
@@ -218,41 +218,41 @@ button {
   cursor: pointer;
 }
 
-button span {
+a span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
 
-button svg {
+a svg, span a {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
 
 
-button:hover .svg-wrapper {
+a:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-button:hover #svg-discord {
+a:hover #svg-discord {
   transform: translateX(105%) rotate(360deg) scale(1.1);
 }
 
-button:hover #svg-play {
+a:hover #svg-play {
   transform: translateX(80%) rotate(360deg) scale(1.1);
 }
 
 
-button:hover #svg-boutique {
+a:hover #svg-boutique {
   transform: translateX(130%) rotate(360deg) scale(1.1);
 }
 
-button:hover span {
+a:hover span {
   transform: translateX(5em);
 }
 
-button:active {
+a:active {
   transform: scale(0.95);
 }
 
