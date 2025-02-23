@@ -34,11 +34,11 @@
             >
           </li>
           <li>
-            <a href="#partners"
-              class="text-slate-400 text-xl"
-              >Page</a
-            >
+            <NuxtLink to="/boutique" class="text-slate-400 text-xl">
+              Boutique
+            </NuxtLink>
           </li>
+
         </ul>
       </div>
 
