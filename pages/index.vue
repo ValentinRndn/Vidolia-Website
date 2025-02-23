@@ -87,7 +87,7 @@
           <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-5xl font-bold">Payez en <br>toute <br> sécurité</h2>
           <p class="text-5xl text-white uppercase ">Avec Tebex</p>
           <p class="text-gray-400 mt-2 text-xl">Mastercard, Visa, Paypal et bien d'autres...</p>
-          <button class=" bg-gradient-to-r from-blue-500 to-blue-800 w-fit mt-4">
+          <a class=" bg-gradient-to-r from-blue-500 to-blue-800 w-fit mt-4">
             <div class="svg-wrapper-1 ">
               <div class="svg-wrapper">
                 <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"/></svg> -->
@@ -95,7 +95,7 @@
               </div>
             </div>
             <span>Boutique</span>
-          </button>
+          </a>
         </div>
               <img id="card-banc" src="/assets/images/index/creditcard_copie.webp" alt="credit card mockup " class="w-[35em] -mt-20">
         </div>
