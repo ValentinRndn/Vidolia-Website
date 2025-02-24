@@ -1,14 +1,17 @@
 <template>
-    <div class="min-h-screen relative">
+    <div class="min-h-[screen] relative bg-navy-900">
   
       <!-- Hero Section -->
-      <section class="relative bg-landing bg-cover bg-center bg-no-repeat pt-16 px-4  mx-auto flex  items-center ">
-      <div class="absolute inset-0 bg-navy-900 opacity-95"></div>
+      <section class="relative  pt-16   mx-auto flex flex-col  items-center ">
+        <div class="banner-container h-[400px] w-full bg-landing bg-cover bg-center bg-no-repeat">
+          <div class="absolute inset-0 bg-navy-900 opacity-95 z-0"></div>
+          <h1 class="text-7xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 z-20">
+            Bienvenue sur la <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800">Boutique</span>
+         </h1>
+        </div>
 
   <div class="mx-auto z-10">
-    <h1 class="text-7xl lg:text-5xl xl:text-6xl font-bold text-white mb-6">
-      Bienvenue sur la <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800">Boutique</span>
-    </h1>
+
     <p class="text-gray-400 text-xl lg:text-lg xl:text-xl  max-w-2xl mb-10">
       Plongez dans l'univers de Demon Slayer avec notre serveur GMod unique. Affrontez des démons, rejoignez les pourfendeurs, et vivez une expérience de RP immersive.
     </p>
