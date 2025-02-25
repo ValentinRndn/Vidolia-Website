@@ -4,24 +4,24 @@
     <div class="particles-background absolute inset-0 z-0"></div>
 
     <!-- Hero Section -->
-    <section class="relative bg-landing bg-cover bg-center bg-no-repeat  mx-auto flex items-center justify-center pb-24">
+    <section class="relative bg-landing bg-cover bg-center bg-no-repeat  mx-auto flex items-center justify-center pb-24 lg:flex-col lg:pt-24">
       <!-- Overlay avec dégradé amélioré -->
       <div class="absolute inset-0 bg-navy-900 opacity-95"></div>
       <div class="absolute inset-0 character-particles"></div>
 
 
-      <div class="mx-auto z-10 hero-content slide-in-left pl-24">
+      <div class="mx-auto z-10 hero-content slide-in-left pl-24 lg:text-center lg:pl-0">
         <h1 class="text-7xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 glow-text">
-          Bienvenue sur <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Vidolia</span>
+          Bienvenue sur <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 animate-gradient">Vidolia</span>
         </h1>
         <p class="text-gray-400 text-xl lg:text-lg xl:text-xl max-w-2xl mb-10 fade-in-paragraph">
           Plongez dans l'univers de Demon Slayer avec notre serveur GMod unique. Affrontez des démons, rejoignez les pourfendeurs, et vivez une expérience de RP immersive.
         </p>
 
-          <div class="flex flex-row lg:flex-row gap-4 button-container">
-          <a class="bg-[#1e40af]">
-            <div class="svg-wrapper-1 ">
-              <div class="svg-wrapper">
+          <div class="flex flex-row gap-4 button-container lg:justify-center">
+          <a class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
+            <div class="svg-wrapper-1  ">
+              <div class="svg-wrapper ">
                 <svg xmlns="http://www.w3.org/2000/svg" id="svg-play" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"/></svg>
               </div>
             </div>
@@ -39,14 +39,14 @@
         </div>
       </div>
 
-      <div class="relative mr-16 hero-image slide-in-right">
+      <div class="relative mr-16 hero-image slide-in-right lg:mx-auto">
         <!-- Effets lumineux autour du personnage -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[700px] bg-gradient-to-r from-blue-500/20 to-blue-700/20 rounded-full blur-3xl"></div>
         
         <!-- Particules flottantes autour du personnage -->
         
-        <div class="relative z-10">
-          <img src="../assets/images/index/tanshiro-pic.png" class="w-[700px] floating-animation" alt="Tanshiro picture">
+        <div class="relative z-10  ">
+          <img src="../assets/images/index/tanshiro-pic.png" class="w-[700px] floating-animation lg:w-[600px]" alt="Tanshiro picture">
           <!-- Dégradé superposé du bas vers le haut avec animation -->
           <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-navy-900 to-transparent opacity-animation"></div>
         </div>
@@ -55,11 +55,8 @@
 
     <!-- Servers Section -->
     <section class="pt-20 bg-navy-900 -mt-32 relative">
-      <!-- Grille d'arrière-plan -->
-      <div class="grid-background absolute inset-0 z-0 opacity-20"></div>
-      
-      <div class="w-[90%] mx-auto relative z-10">
-        <div class="grid grid-cols-2 sm:grid-cols-1 gap-32 w-[55%] mx-auto fade-in-section">
+      <div class="w-[80%] mx-auto relative z-10">
+        <div class="grid grid-cols-2 sm:grid-cols-1 gap-32  mx-auto fade-in-section">
           <!-- Serveur 1 -->
           <div class="server-card p-6 rounded-lg bg-server-card hover:shadow-xl hover:shadow-blue-500/30 transition-all z-50 relative pb-10 border border-blue-500 group">
             <!-- Brillance sur hover -->
@@ -134,7 +131,7 @@
           </a>
         </div>
         
-        <img id="card-banc" src="/assets/images/index/creditcard_copie.webp" alt="credit card mockup" class="w-[35em] -mt-20 card-float rotate-animation z-20">
+        <img id="card-banc" src="/assets/images/index/creditcard_copie.webp" alt="credit card mockup" class="w-[35em] -mt-20 card-float rotate-animation z-20 lg:w-[25em]">
         
         <!-- Effet de brillance sur la carte -->
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-radial from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 card-shine"></div>
@@ -148,7 +145,7 @@
       <!-- Lignes de grille en arrière-plan -->
       <div class="grid-lines absolute inset-0 z-0 opacity-10"></div>
 
-      <div class="w-[80%] p-6 rounded-lg mx-auto flex gap-16 justify-center items-center relative z-10 md:flex-col">
+      <div class="w-[80%] p-6 rounded-lg mx-auto flex gap-16 justify-center items-center relative z-10 lg:flex-col">
         <div class="left-container z-20 slide-in-left">
           <div class="relative overflow-hidden rounded-lg group">
             <img src="../assets/images/index/background-card.webp" alt="server pic" class="rounded-lg transition-transform duration-700 group-hover:scale-105">

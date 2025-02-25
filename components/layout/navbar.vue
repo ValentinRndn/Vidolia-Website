@@ -1,8 +1,5 @@
 <template>
   <header class="bg-navy-900 border-b border-blue-800/30 relative z-50">
-    <!-- Effet de gradient lumineux en arrière-plan -->
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-blue-900/10 z-0"></div>
-    
     <nav class="max-w-[95%] xl:max-w-[90%] mx-auto py-3">
       <!-- Version desktop -->
       <div class="flex md:hidden justify-between items-center">
@@ -34,14 +31,14 @@
           <a href="/bleach" class="text-gray-300 hover:text-white transition-colors relative nav-link">Bleach RP</a>
           
           <!-- Boutique et connexion -->
-          <a href="/boutique" class="flex items-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
+          <NuxtLink to="/boutique" class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             <span>Boutique</span>
-          </a>
+          </NuxtLink>
           
         </div>
       </div>
@@ -57,13 +54,13 @@
         <!-- Boutons principaux condensés -->
         <div class="flex items-center gap-3">
           <!-- Bouton boutique -->
-          <a href="/boutique" class="flex items-center justify-center text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 p-2 rounded-lg transition-all duration-300">
+          <NuxtLink to="/boutique" class="flex items-center justify-center text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 p-2 rounded-lg transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
-          </a>
+          </NuxtLink>
 
           
           <!-- Menu hamburger -->
