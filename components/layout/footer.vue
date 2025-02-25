@@ -3,7 +3,7 @@
       <div class="footer-container flex justify-center gap-24 items-center bg-primary-400 py-4 relative md:flex-col md:items-center md:justify-center md:gap-6">
         <!-- Left container -->
         <div class="left-container flex items-center">
-          <img src="/assets/images/navbar/logo_long_white.webp" alt="Logo Kleora" class="w-[400px] md:w-[200px]" />
+          <!-- <img src="/assets/images/navbar/logo_long_white.webp" alt="Logo Kleora" class="w-[400px] md:w-[200px]" /> -->
         </div>
   
         <!-- Vertical divider -->

@@ -37,224 +37,28 @@
 
     <div class="mx-auto z-10 max-w-[90%] text-gray-400 py-24">
       <h2 class="text-white uppercase text-5xl font-bold mb-4">Bienvenue dans notre boutique officielle ! </h2>
+      <span class="block w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mt-4 animate-width mb-4"></span>
       <p class="max-w-[70%] mb-12">Ici, tu peux acheter divers avantages et objets exclusifs pour améliorer ton expérience sur notre serveur GMod. Que ce soit des armes spéciales, des skins uniques, des rangs VIP ou encore des bonus en jeu, tout est conçu pour te permettre de profiter pleinement de ton aventure. Chaque achat soutient directement le serveur et aide à proposer du contenu toujours plus immersif. Rejoins l'action et équipe-toi dès maintenant ! </p>
 
-      <!-- Stats Grid -->
-      <div class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-1 gap-6 mb-12">
-        <!-- Top Donateur du Mois -->
-        <div class="bg-navy-800 p-6 rounded-lg">
-          <h3 class="text-white text-xl font-semibold mb-4">Top Donateur du Mois</h3>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
-                <span class="text-white">Pseudo1</span>
-              </div>
-              <span class="text-blue-400">150€</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
-                <span class="text-white">Pseudo2</span>
-              </div>
-              <span class="text-blue-400">100€</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
-                <span class="text-white">Pseudo3</span>
-              </div>
-              <span class="text-blue-400">75€</span>
-            </div>
-          </div>
-        </div>
+      
+</div>
 
-        <!-- Derniers Achats -->
-        <div class="bg-navy-800 p-6 rounded-lg">
-          <h3 class="text-white text-xl font-semibold mb-4">Derniers Achats</h3>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-white">Pseudo4</span>
-              <div class="flex items-center gap-2">
-                <span class="text-sm text-gray-400">Pack VIP</span>
-                <span class="text-blue-400">25€</span>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-white">Pseudo5</span>
-              <div class="flex items-center gap-2">
-                <span class="text-sm text-gray-400">Pack Elite</span>
-                <span class="text-blue-400">50€</span>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-white">Pseudo6</span>
-              <div class="flex items-center gap-2">
-                <span class="text-sm text-gray-400">Pack Legend</span>
-                <span class="text-blue-400">100€</span>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="choose-server-container">
+  <h2 class="text-white uppercase text-5xl font-bold mb-4 text-center">Choisis ton serveur</h2>
+  <span class="block w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mt-4 animate-width mb-24 mx-auto"></span>
 
-        <!-- Top Donateurs All Time -->
-        <div class="bg-navy-800 p-6 rounded-lg">
-          <h3 class="text-white text-xl font-semibold mb-4">Top Donateurs All Time</h3>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
-                <span class="text-white">Pseudo7</span>
-              </div>
-              <span class="text-blue-400">500€</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
-                <span class="text-white">Pseudo8</span>
-              </div>
-              <span class="text-blue-400">350€</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
-                <span class="text-white">Pseudo9</span>
-              </div>
-              <span class="text-blue-400">200€</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carte Cadeau -->
-        <div class="bg-navy-800 p-6 rounded-lg relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-24 h-24">
-            <div class="absolute transform rotate-45 bg-blue-500 text-white text-xs font-bold py-1 right-[-35px] top-[32px] w-[170px] text-center">
-              NOUVEAU
-            </div>
-          </div>
-          <h3 class="text-white text-xl font-semibold mb-4">Carte Cadeau</h3>
-          <p class="text-gray-400 mb-4">Offrez du crédit à vos amis !</p>
-          <div class="space-y-2">
-            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">10€</button>
-            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">25€</button>
-            <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">50€</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Packages Section -->
-      <h2 class="text-white text-3xl font-bold mb-8">Nos Packages</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Pack VIP -->
-        <div class="bg-navy-800 rounded-lg overflow-hidden">
-          <div class="bg-blue-600 p-4">
-            <h3 class="text-white text-2xl font-bold text-center">Pack VIP</h3>
-          </div>
-          <div class="p-6">
-            <div class="text-center mb-6">
-              <span class="text-3xl font-bold text-white">25€</span>
-              <span class="text-gray-400">/mois</span>
-            </div>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Accès aux zones VIP
-              </li>
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Tag spécial sur le Discord
-              </li>
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                +5000 crédits en jeu
-              </li>
-            </ul>
-            <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
-              Acheter
-            </button>
-          </div>
-        </div>
-
-        <!-- Pack Elite -->
-        <div class="bg-navy-800 rounded-lg overflow-hidden transform scale-105 shadow-xl">
-          <div class="bg-purple-600 p-4">
-            <h3 class="text-white text-2xl font-bold text-center">Pack Elite</h3>
-          </div>
-          <div class="p-6">
-            <div class="text-center mb-6">
-              <span class="text-3xl font-bold text-white">50€</span>
-              <span class="text-gray-400">/mois</span>
-            </div>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Tous les avantages VIP
-              </li>
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Armes exclusives
-              </li>
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                +15000 crédits en jeu
-              </li>
-            </ul>
-            <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition">
-              Acheter
-            </button>
-          </div>
-        </div>
-
-        <!-- Pack Legend -->
-        <div class="bg-navy-800 rounded-lg overflow-hidden">
-          <div class="bg-amber-600 p-4">
-            <h3 class="text-white text-2xl font-bold text-center">Pack Legend</h3>
-          </div>
-          <div class="p-6">
-            <div class="text-center mb-6">
-              <span class="text-3xl font-bold text-white">100€</span>
-              <span class="text-gray-400">/mois</span>
-            </div>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Tous les avantages Elite
-              </li>
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Skins légendaires
-              </li>
-              <li class="flex items-center gap-2 text-gray-400">
-                <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                +50000 crédits en jeu
-              </li>
-            </ul>
-            <button class="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition">
-              Acheter
-            </button>
-          </div>
-        </div>
-      </div>
+  <div class="servers-container flex justify-center items-center gap-44 text-white">
+    <div class="server-container bg-serverCard h-[200px] w-[500px] z-10 border border-blue-500">
+      <h3 class="">Demon Slayer</h3>
+      
     </div>
 
+    <div class="server-container">
+      <h3>Bleach</h3>
+      
+    </div>
+  </div>
+</div>
   </div>
 </template>
 
