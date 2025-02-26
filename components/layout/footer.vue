@@ -14,9 +14,9 @@
           <div class="flex flex-col space-y-4">
             <div class="flex items-center space-x-3">
               <!-- <img src="https://via.placeholder.com/50x50/1e40af/ffffff?text=V" alt="Vidolia Logo" class="w-10 h-10 drop-shadow-glow"> -->
-              <h2 class="text-white text-2xl font-bold">Vidolia</h2>
+              <h2 class="text-white text-2xl font-bold md:mx-auto">Vidolia</h2>
             </div>
-            <p class="text-gray-400 mt-4">Une communauté de jeu de rôle immersive où la créativité et l'imagination prennent vie à travers des univers fascinants.</p>
+            <p class="text-gray-400 mt-4 md:text-center">Une communauté de jeu de rôle immersive où la créativité et l'imagination prennent vie à travers des univers fascinants.</p>
             <!-- <div class="flex space-x-4 mt-4">
               <a href="https://discord.gg/vidoliads" target="_blank" class="w-10 h-10 rounded-full bg-navy-800 flex items-center justify-center hover:bg-blue-600 transition-all duration-300 group">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
@@ -74,7 +74,7 @@
         
         <!-- Serveurs en ligne -->
         <div class="col-span-1">
-          <h3 class="text-white text-lg font-semibold mb-4 flex items-center">
+          <h3 class="text-white text-lg font-semibold mb-4 flex items-center md:justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
               <path d="M4 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M9 5h1V3H9v2m0 8h1v-2H9v2m0 8h1v-2H9v2M5 3v2h2V3H5m0 8v2h2v-2H5m0 8v2h2v-2H5Z"/>
             </svg>

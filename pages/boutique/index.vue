@@ -10,7 +10,7 @@
       
       <!-- Contenu de la bannière -->
       <div class="relative z-10 flex flex-col items-center gap-4 transform slide-in-top">
-        <h1 class="text-7xl lg:text-5xl xl:text-6xl font-bold text-white glow-text">
+        <h1 class="text-7xl md:text-6xl sm:text-5xl font-bold text-white glow-text">
           Bienvenue sur la 
           <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Boutique</span>
         </h1>
@@ -44,7 +44,7 @@
     <!-- Section de présentation -->
     <div class="mx-auto z-10 text-gray-400 py-24 relative bg-server-card-bottom">      
       <div class="fade-in-section max-w-[80%] mx-auto">
-        <h2 class="text-white uppercase text-5xl font-bold mb-4 glow-text text-center">Bienvenue dans notre boutique officielle !</h2>
+        <h2 class="text-white uppercase text-5xl md:4-xl sm:3-xl font-bold mb-4 glow-text text-center">Bienvenue dans notre boutique officielle !</h2>
         <span class="block w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mt-4 animate-width mb-8 mx-auto"></span>
         
         <p class=" mb-12 text-gray-300 leading-relaxed text-lg fade-in-paragraph text-center">
@@ -60,7 +60,7 @@
     <div class="choose-server-container bg-server-card relative pb-32">
       
       <div class="relative z-10 max-w-[80%] mx-auto">
-        <h2 class="text-white uppercase text-5xl font-bold mb-4 text-center glow-text fade-in-title">Choisis ton serveur</h2>
+        <h2 class="text-white uppercase text-5xl md:4-xl sm:3-xl font-bold mb-4 text-center glow-text fade-in-title">Choisis ton serveur</h2>
         <span class="block w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mt-4 animate-width mb-24 mx-auto"></span>
         
         <div class="servers-container grid grid-cols-2   gap-8 lg:gap-16 xl:gap-44 text-white ">

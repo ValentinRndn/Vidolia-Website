@@ -11,7 +11,7 @@
         
         <!-- Contenu de la bannière -->
         <div class="relative z-10 flex flex-col items-center gap-4 transform slide-in-top max-w-[1400px] sm:max-w-[95%] px-4">
-          <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-white glow-text">
+          <h1 class="text-7xl sm:text-5xl md:text-6xl font-bold text-white glow-text">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Bleach</span> RP
           </h1>
           <p class="text-gray-300 max-w-2xl text-center text-xl mt-4">Rejoignez le combat entre les pourfendeurs de démons et les forces démoniaques de Muzan. Développez vos techniques de respiration et forgez votre propre légende.</p>
@@ -38,7 +38,7 @@
         <!-- Présentation du serveur -->
         <section class="mb-24">
           <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-white mb-6 glow-text">Bienvenue sur Vidolia <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Bleach</span></h2>
+            <h2 class="text-5xl md:4-xl sm:3-xl font-bold text-white mb-6 glow-text">Bienvenue sur Vidolia <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Bleach</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mx-auto"></div>
           </div>
           
@@ -76,7 +76,7 @@
         <!-- Liens importants & Wiki Section -->
         <section id="wiki" class="relative ">
           <div class="text-center mb-12 relative z-10">
-            <h2 class="text-4xl font-bold text-white mb-6 glow-text">Ressources <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Importantes</span></h2>
+            <h2 class="text-5xl md:4-xl sm:3-xl font-bold text-white mb-6 glow-text">Ressources <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Importantes</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mx-auto"></div>
             <p class="text-gray-300 text-lg max-w-2xl mx-auto mt-4">
               Tout ce dont vous avez besoin pour commencer votre aventure ou approfondir vos connaissances sur l'univers.
@@ -163,7 +163,7 @@
               </h3>
               
               <div class="bg-navy-900 rounded-lg p-6 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-md">
-                <div class="flex flex-col md:flex-row gap-6 items-center">
+                <div class="flex flex-col md:flex-col gap-6 items-center">
                   <img src="/assets/images/boutique/bleach_wallpaper.webp" alt="Wiki Logo" class="object-contain rounded-lg">
                   
                   <div>
@@ -220,7 +220,7 @@
         <div class="absolute bottom-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
         
         <div class="mx-auto max-w-[1400px] sm:max-w-[95%] px-4 relative z-10 flex flex-col items-center text-center">
-          <h2 class="text-4xl font-bold text-white mb-4 glow-text">Prêt à rejoindre l'aventure ?</h2>
+          <h2 class="text-5xl md:4-xl sm:3-xl font-bold text-white mb-4 glow-text">Prêt à rejoindre l'aventure ?</h2>
           <p class="text-gray-300 mb-8 max-w-2xl">Le monde a besoin de héros pour combattre les forces démoniaques. Devenez un pourfendeur légendaire ou un puissant démon et écrivez votre propre histoire.</p>
           
           <div class="flex flex-col sm:flex-row gap-4">

@@ -10,7 +10,7 @@
         
         <!-- Contenu de la bannière -->
         <div class="relative z-10 flex flex-col items-center gap-4 transform slide-in-top">
-          <h1 class="text-5xl lg:text-4xl xl:text-5xl font-bold text-white glow-text">
+          <h1 class="text-7xl md:text-6xl sm:text-5xl font-bold text-white glow-text">
             Boutique <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Bleach</span>
           </h1>
           <p class="text-gray-300 max-w-2xl text-center">Améliorez votre expérience et supportez le serveur avec nos packs exclusifs</p>
@@ -278,7 +278,7 @@
       <div class="bg-landing-bleach bg-cover bg-center  py-16 relative overflow-hidden">
         <div class="absolute inset-0 bg-navy-900 opacity-90"></div>
         <div class="max-w-[90%] mx-auto relative z-10 flex flex-col items-center text-center">
-          <h2 class="text-4xl font-bold text-white mb-4 glow-text">Besoin d'aide pour choisir ?</h2>
+          <h2 class="text-5xl md:4-xl sm:3-xl font-bold text-white mb-4 glow-text">Besoin d'aide pour choisir ?</h2>
           <p class="text-gray-300 mb-8 max-w-2xl">Notre équipe est disponible pour vous aider à trouver le pack parfait pour votre style de jeu. N'hésitez pas à nous contacter sur Discord.</p>
           <a href="https://discord.gg/vidoliads" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:shadow-md hover:shadow-blue-500/30">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

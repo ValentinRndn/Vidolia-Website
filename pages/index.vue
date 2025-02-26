@@ -7,8 +7,8 @@
     <section class="relative bg-landing bg-cover bg-center bg-no-repeat  mx-auto flex items-center justify-center pb-24 lg:flex-col lg:pt-24">
       <div class="absolute inset-0 bg-navy-900 opacity-95"></div>
       <div class="absolute inset-0 character-particles"></div>
-      <div class="mx-auto z-10 hero-content slide-in-left pl-24 lg:text-center lg:pl-0">
-        <h1 class="text-7xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 glow-text">
+      <div class="mx-auto max-w-[80%] sm:max-w-[95%] z-10 hero-content slide-in-left pl-24 lg:text-center lg:pl-0">
+        <h1 class="text-7xl md:text-6xl sm:text-5xl font-bold text-white mb-6 glow-text">
           Bienvenue sur <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 animate-gradient">Vidolia</span>
         </h1>
         <p class="text-gray-400 text-xl lg:text-lg xl:text-xl max-w-2xl mb-10 fade-in-paragraph">
@@ -40,20 +40,16 @@
         <!-- Effets lumineux autour du personnage -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[700px] bg-gradient-to-r from-blue-500/20 to-blue-700/20 rounded-full blur-3xl"></div>
         
-        <!-- Particules flottantes autour du personnage -->
-        
         <div class="relative z-10  ">
           <img src="../assets/images/index/tanshiro-pic.png" class="w-[700px] floating-animation lg:w-[600px]" alt="Tanshiro picture">
-          <!-- Dégradé superposé du bas vers le haut avec animation -->
-          <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-navy-900 to-transparent opacity-animation"></div>
         </div>
       </div>
     </section>
 
     <!-- Servers Section -->
     <section class="pt-20 bg-navy-900 -mt-32 relative">
-      <div class="w-[80%] mx-auto relative z-10">
-        <div class="grid grid-cols-2 sm:grid-cols-1 gap-32  mx-auto fade-in-section">
+      <div class="relative z-10 max-w-[80%] sm:max-w-[95%] mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-1 md:gap-8 gap-32  mx-auto fade-in-section">
           <!-- Serveur 1 -->
           <div class="server-card p-6 rounded-lg bg-server-card hover:shadow-xl hover:shadow-blue-500/30 transition-all z-50 relative pb-10 border border-blue-500 group">
             <!-- Brillance sur hover -->
@@ -69,7 +65,7 @@
             </svg>
             
             <div class="relative z-10">
-              <h3 class="text-3xl font-bold text-white mb-4 glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">Serveur #1</h3>
+              <h3 class="text-3xl md:text-xl font-bold text-white mb-4 glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">Serveur #1</h3>
               <p class="text-gray-400 mb-4 text-xl group-hover:text-gray-300 transition-colors duration-300">Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.</p>
               <div class="connected-players absolute right-8 items-center justify-center flex">
                 <span class="point-players pulse-green"></span>
@@ -93,7 +89,7 @@
             </svg>
             
             <div class="relative z-10">
-              <h3 class="text-3xl font-bold text-white mb-4 glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">Serveur #2</h3>
+              <h3 class="text-3xl md:text-xl font-bold text-white mb-4 glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">Serveur #2</h3>
               <p class="text-gray-400 mb-4 text-xl group-hover:text-gray-300 transition-colors duration-300">Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.</p>
               <div class="connected-players absolute right-8 items-center justify-center flex">
                 <span class="point-players pulse-green"></span>
@@ -106,20 +102,20 @@
     </section>
 
     <!-- Payment Section -->
-    <div class="absolute left-0 w-[150rem] h-[40rem] bg-gradient-to-r from-blue-800/70 to-transparent blur-[100px] -translate-x-1/2 z-0 animate-pulse-slow"></div>
+    <div class="absolute left-0 w-[150rem] h-[40rem] bg-gradient-to-r from-blue-800/70 to-transparent blur-[100px] -translate-x-1/2 z-0 animate-pulse-slow sm:max-w-[95%]"></div>
 
-    <section class="py-52 bg-navy-900 relative">
-      <div class="w-[80%] p-6 rounded-lg mx-auto flex gap-16 justify-center items-center bg-server-card border border-blue-500 z-20 md:flex-col payment-section-card group hover:shadow-xl hover:shadow-blue-500/20 transition-all">
+    <section class="py-52 bg-navy-900 relative md:py-24">
+      <div class="max-w-[80%] sm:max-w-[95%] p-6 rounded-lg mx-auto flex gap-16 justify-center items-center bg-server-card border border-blue-500 z-20 md:flex-col payment-section-card group hover:shadow-xl hover:shadow-blue-500/20 transition-all">
         <!-- Effet de particules à l'intérieur de la carte -->
         <div class="absolute inset-0 card-particles opacity-30"></div>
         
         <div class="title-container flex flex-col z-20 fade-in-section">
-          <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-5xl font-bold animate-gradient">Payez en <br>toute <br> sécurité</h2>
-          <p class="text-5xl text-white uppercase glow-text-subtle">Avec Tebex</p>
-          <p class="text-gray-400 mt-2 text-xl">Mastercard, Visa, Paypal et bien d'autres...</p>
+          <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-5xl md:text-3xl font-bold animate-gradient md:text-center ">Payez en <br>toute <br> sécurité</h2>
+          <p class="text-5xl md:text-3xl text-white uppercase glow-text-subtle md:text-center">Avec Tebex</p>
+          <p class="text-gray-400 mt-2 text-xl md:text-center">Mastercard, Visa, Paypal et bien d'autres...</p>
           <!-- Le bouton est conservé à l'identique comme demandé -->
-          <a class="bg-gradient-to-r from-blue-500 to-blue-800 w-fit mt-4">
-            <div class="svg-wrapper-1">
+          <a class="bg-gradient-to-r from-blue-500 to-blue-800 w-fit mt-4 md:mx-auto md:mb-8">
+            <div class="svg-wrapper-1 ">
               <div class="svg-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" id="svg-boutique" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 20v-2h14v2zm0-3.5L3.725 8.475q-.05 0-.113.013T3.5 8.5q-.625 0-1.062-.438T2 7t.438-1.062T3.5 5.5t1.063.438T5 7q0 .175-.038.325t-.087.275L8 9l3.125-4.275q-.275-.2-.45-.525t-.175-.7q0-.625.438-1.063T12 2t1.063.438T13.5 3.5q0 .375-.175.7t-.45.525L16 9l3.125-1.4q-.05-.125-.088-.275T19 7q0-.625.438-1.063T20.5 5.5t1.063.438T22 7t-.437 1.063T20.5 8.5q-.05 0-.112-.012t-.113-.013L19 16.5zm1.7-2h10.6l.65-4.175l-2.625 1.15L12 6.9l-3.325 4.575l-2.625-1.15zm5.3 0"/></svg>
               </div>
@@ -136,28 +132,25 @@
     </section>
 
     <!-- Pres Server Section -->
-    <section class="pb-52 bg-navy-900 relative">
+    <section class=" bg-navy-900 relative pb-24 ">
       <div class="absolute right-0 w-[150rem] h-[30rem] bg-gradient-to-l from-blue-800/70 to-transparent blur-[100px] z-0 animate-pulse-slow"></div>
 
       <!-- Lignes de grille en arrière-plan -->
-      <div class="grid-lines absolute inset-0 z-0 opacity-10"></div>
+      <div class="grid-lines absolute inset-0 z-0 opacity-10 "></div>
 
-      <div class="w-[80%] p-6 rounded-lg mx-auto flex gap-16 justify-center items-center relative z-10 lg:flex-col">
-        <div class="left-container z-20 slide-in-left">
+      <div class="max-w-[80%] sm:max-w-[95%] p-6 rounded-lg mx-auto flex gap-16 justify-center items-center relative z-10 lg:flex-col">
+        <div class="left-container z-20 slide-in-left ">
           <div class="relative overflow-hidden rounded-lg group">
             <img src="../assets/images/index/background-card.webp" alt="server pic" class="rounded-lg transition-transform duration-700 group-hover:scale-105">
             
             <!-- Effet de survol sur l'image -->
-            <div class="absolute inset-0 bg-gradient-to-t from-blue-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
-            <!-- Bordure brillante sur hover -->
-            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg blur opacity-0 group-hover:opacity-70 transition duration-500"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>            
           </div>
         </div>
 
         <div class="right-container z-20 slide-in-right">
           <p class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-xl font-bold mb-4 animate-gradient">Vidolia</p>
-          <h2 class="text-white uppercase text-5xl font-bold mb-4 glow-text-subtle">
+          <h2 class="text-white uppercase text-5xl md:text-3xl font-bold mb-4 glow-text-subtle">
             Une communauté <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800">Garry's mod </span>fondée sur le monde de Demon Slayer
           </h2>
           <p class="text-gray-400 text-xl fade-in-paragraph">
@@ -170,17 +163,17 @@
     </section>
 
     <!-- Team Section -->
-    <section class="pb-52 bg-server-card relative">
+    <section class="py-24 bg-server-card relative md:pb-24">
       <!-- Particules d'arrière-plan -->
       <div class="team-particles absolute inset-0 z-0 opacity-20"></div>
       
-      <div class="w-[80%] mx-auto relative z-10">
-        <h2 class="text-white uppercase text-5xl font-bold mb-24 text-center glow-text fade-in-title">
+      <div class="max-w-[80%] sm:max-w-[95%] mx-auto relative z-10">
+        <h2 class="text-white uppercase text-5xl md:text-3xl font-bold mb-24 text-center glow-text fade-in-title">
           Notre équipe
           <span class="block w-48 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mx-auto mt-4 animate-width"></span>
         </h2>
         
-        <div class="grid sm:grid-cols-2 grid-cols-4 gap-8 fade-in-section">
+        <div class="grid md:grid-cols-2 grid-cols-4 gap-8 fade-in-section">
           <!-- Membre 1 -->
           <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
             <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
