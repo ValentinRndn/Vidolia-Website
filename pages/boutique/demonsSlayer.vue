@@ -276,8 +276,8 @@
 </div>
     
     <!-- Appel à l'action -->
-    <div class="bg-navy-800 py-16 relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-transparent"></div>
+    <div class="bg-landing bg-cover bg-center  py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-navy-900 opacity-90"></div>
       <div class="max-w-[90%] mx-auto relative z-10 flex flex-col items-center text-center">
         <h2 class="text-4xl font-bold text-white mb-4 glow-text">Besoin d'aide pour choisir ?</h2>
         <p class="text-gray-300 mb-8 max-w-2xl">Notre équipe est disponible pour vous aider à trouver le pack parfait pour votre style de jeu. N'hésitez pas à nous contacter sur Discord.</p>

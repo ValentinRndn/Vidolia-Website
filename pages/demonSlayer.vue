@@ -212,9 +212,8 @@
       </div>
       
       <!-- Banner Call to Action -->
-      <section class="py-16 bg-gradient-to-r from-navy-800 to-navy-900 relative mt-20">
-        <div class="absolute inset-0 bg-blue-500/5"></div>
-        
+      <section class="py-16 bg-landing bg-cover bg-center relative mt-20">
+        <div class="absolute inset-0 bg-navy-900 opacity-90"></div>
         <!-- Effet lumineux -->
         <div class="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
         <div class="absolute bottom-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>

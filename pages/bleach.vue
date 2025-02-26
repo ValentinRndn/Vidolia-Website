@@ -23,7 +23,7 @@
               </svg>
               Jouer maintenant
             </a>
-            <a href="#wiki" class="px-6 py-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50">
+            <a href="https://vidolia.fr/wiki-bleach" target="_blank" class="px-6 py-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
                 <path fill="currentColor" d="M19 2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14m-2 3a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1z"/>
               </svg>
@@ -212,8 +212,8 @@
       </div>
       
       <!-- Banner Call to Action -->
-      <section class="py-16 bg-gradient-to-r from-navy-800 to-navy-900 relative mt-20">
-        <div class="absolute inset-0 bg-blue-500/5"></div>
+      <section class="py-16 bg-landing-bleach bg-cover bg-center relative mt-20">
+        <div class="absolute inset-0 bg-navy-900 opacity-90"></div>
         
         <!-- Effet lumineux -->
         <div class="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
