@@ -5,11 +5,8 @@
     
     <!-- Bannière de la boutique -->
     <div class="banner-container h-[400px] w-full bg-landing bg-cover bg-center bg-no-repeat relative flex flex-col justify-center items-center text-center overflow-hidden">
-      <!-- Overlay avec dégradé amélioré -->
-      <div class="absolute inset-0 bg-gradient-to-b from-navy-900/98 to-navy-900/95 z-0"></div>
-      
-      <!-- Effet de lumière radiale -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-3xl pulse-animation"></div>
+      <div class="absolute inset-0 bg-navy-900 opacity-95"></div>
+      <div class="absolute inset-0 character-particles"></div>
       
       <!-- Contenu de la bannière -->
       <div class="relative z-10 flex flex-col items-center gap-4 transform slide-in-top">
@@ -45,35 +42,30 @@
     </div>
 
     <!-- Section de présentation -->
-    <div class="mx-auto z-10 max-w-[90%] text-gray-400 py-24 relative">
-      <!-- Lignes flottantes en arrière-plan -->
-      <div class="floating-lines absolute inset-0 z-0"></div>
-      
-      <div class="fade-in-section">
-        <h2 class="text-white uppercase text-5xl font-bold mb-4 glow-text">Bienvenue dans notre boutique officielle !</h2>
-        <span class="block w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mt-4 animate-width mb-8"></span>
+    <div class="mx-auto z-10 text-gray-400 py-24 relative bg-server-card-bottom">      
+      <div class="fade-in-section max-w-[80%] mx-auto">
+        <h2 class="text-white uppercase text-5xl font-bold mb-4 glow-text text-center">Bienvenue dans notre boutique officielle !</h2>
+        <span class="block w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mt-4 animate-width mb-8 mx-auto"></span>
         
-        <p class="max-w-[70%] mb-12 text-gray-300 leading-relaxed text-lg fade-in-paragraph">
+        <p class=" mb-12 text-gray-300 leading-relaxed text-lg fade-in-paragraph text-center">
           Ici, tu peux acheter divers avantages et objets exclusifs pour améliorer ton expérience sur notre serveur GMod. 
           Que ce soit des armes spéciales, des skins uniques, des rangs VIP ou encore des bonus en jeu, tout est conçu 
           pour te permettre de profiter pleinement de ton aventure. Chaque achat soutient directement le serveur et aide 
-          à proposer du contenu toujours plus immersif. Rejoins l'action et équipe-toi dès maintenant !
+          à proposer du contenu toujours plus immersif. Rejoins l'action et équipe-toi dès maintenant!
         </p>
       </div>
     </div>
 
     <!-- Section de choix du serveur -->
-    <div class="choose-server-container relative pb-32">
-      <!-- Grille d'arrière-plan -->
-      <div class="grid-background absolute inset-0 z-0 opacity-20"></div>
+    <div class="choose-server-container bg-server-card relative pb-32">
       
-      <div class="relative z-10">
+      <div class="relative z-10 max-w-[80%] mx-auto">
         <h2 class="text-white uppercase text-5xl font-bold mb-4 text-center glow-text fade-in-title">Choisis ton serveur</h2>
         <span class="block w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mt-4 animate-width mb-24 mx-auto"></span>
         
-        <div class="servers-container grid grid-cols-2   gap-8 lg:gap-16 xl:gap-44 text-white  px-6">
+        <div class="servers-container grid grid-cols-2   gap-8 lg:gap-16 xl:gap-44 text-white ">
           <!-- Serveur Demon Slayer -->
-          <div class="server-card bg-navy-800 rounded-xl p-6 border border-blue-500 relative overflow-hidden shadow-xl hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group sm:w-full md:w-[450px] lg:w-[500px] h-[300px] flex flex-col justify-between">
+          <div class="server-card bg-server-card rounded-xl p-6 border border-blue-500 relative overflow-hidden shadow-xl hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group sm:w-full md:w-[450px] lg:w-[500px] h-[300px] flex flex-col justify-between">
             <!-- Effet de brillance sur hover -->
             <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
             
@@ -83,8 +75,8 @@
             <!-- Particules serveur -->
             <div class="absolute inset-0 server-particles opacity-20"></div>
             
-            <div class="relative z-10">
-              <div class="flex justify-between items-start mb-4">
+            <div class="relative z-10 ">
+              <div class="flex justify-between items-start mb-4 ">
                 <h3 class="text-3xl font-bold text-white glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">Demon Slayer</h3>
                 
                 <!-- Icône de serveur avec animation -->
@@ -126,7 +118,7 @@
           </div>
           
           <!-- Serveur Bleach -->
-          <div class="server-card bg-navy-800 rounded-xl p-6 border border-blue-500 relative overflow-hidden shadow-xl hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group sm:w-full md:w-[450px] lg:w-[500px] h-[300px] flex flex-col justify-between">
+          <div class="server-card bg-server-card rounded-xl p-6 border border-blue-500 relative overflow-hidden shadow-xl hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group sm:w-full md:w-[450px] lg:w-[500px] h-[300px] flex flex-col justify-between">
             <!-- Effet de brillance sur hover -->
             <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
             
@@ -184,25 +176,6 @@
 </template>
 
 <style>
-/* Base colors */
-.bg-navy-900 {
-  background-color: #111827;
-}
-
-.bg-navy-800 {
-  background-color: #1e293b;
-}
-
-.bg-serverCard {
-  background-color: #1a2234;
-}
-
-/* Hover effect pour les boutons */
-.bg-navy-800:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
-}
-
 /* Animations and effects */
 /* Animation de texte brillant */
 .glow-text {

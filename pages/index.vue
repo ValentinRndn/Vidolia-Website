@@ -5,11 +5,8 @@
 
     <!-- Hero Section -->
     <section class="relative bg-landing bg-cover bg-center bg-no-repeat  mx-auto flex items-center justify-center pb-24 lg:flex-col lg:pt-24">
-      <!-- Overlay avec dégradé amélioré -->
       <div class="absolute inset-0 bg-navy-900 opacity-95"></div>
       <div class="absolute inset-0 character-particles"></div>
-
-
       <div class="mx-auto z-10 hero-content slide-in-left pl-24 lg:text-center lg:pl-0">
         <h1 class="text-7xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 glow-text">
           Bienvenue sur <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 animate-gradient">Vidolia</span>

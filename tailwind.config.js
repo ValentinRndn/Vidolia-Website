@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: {
         'gradient-vertical': 'linear-gradient(to top, #01032c, #012899 100%)',
          'landing': "url('/assets/images/index/bg-landing.webp')",
+         'landing-bleach': "url('/assets/images/boutique/bleach_wallpaper.webp')",
          'tebexCard': "url('/assets/images/index/backgroundTebex.png')",
          'blueTexture': "url('/assets/images/index/bgBleu.png')",
          'server-card': 'linear-gradient(to top, #1e40af,  5%,#0f172a 100%)',

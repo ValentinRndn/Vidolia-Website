@@ -5,8 +5,10 @@
       <div class="flex md:hidden justify-between items-center">
         <!-- Logo et nom -->
         <div class="flex items-center gap-3">
+          <NuxtLink to="/">
           <img src="/assets/images/navbar/logo_vidolia.png" alt="Vidolia Logo" class="w-10 h-10" />
           <span class="text-white font-bold text-xl">Vidolia</span>
+        </NuxtLink>
         </div>
         
         <!-- Boutons principaux -->
@@ -27,7 +29,7 @@
           </div>
           
           <!-- Liens des serveurs -->
-          <a href="/demon-slayer" class="text-gray-300 hover:text-white transition-colors relative nav-link">Demon Slayer RP</a>
+          <NuxtLink to="/demonSlayer" class="text-gray-300 hover:text-white transition-colors relative nav-link">Demon Slayer RP</NuxtLink>
           <a href="/bleach" class="text-gray-300 hover:text-white transition-colors relative nav-link">Bleach RP</a>
           
           <!-- Boutique et connexion -->
