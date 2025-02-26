@@ -38,7 +38,7 @@
         <!-- Présentation du serveur -->
         <section class="mb-24">
           <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-white mb-6 glow-text">Bienvenue sur Vidolia <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Demon Slayer</span></h2>
+            <h2 class="text-4xl font-bold text-white mb-6 glow-text">Bienvenue sur Vidolia <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 animate-gradient">Bleach</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mx-auto"></div>
           </div>
           
