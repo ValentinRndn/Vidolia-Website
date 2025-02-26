@@ -109,10 +109,10 @@
               </div>
             </div>
           </div>
-          
+<!--           
           <a href="#" class="block mt-4 text-center px-4 py-2 bg-navy-800 border border-blue-500/30 hover:border-blue-500/60 rounded-lg text-white hover:bg-navy-700 transition-all duration-300">
             Voir tous les serveurs
-          </a>
+          </a> -->
         </div>
         
       </div>
