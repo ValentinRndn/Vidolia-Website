@@ -23,12 +23,12 @@
               </svg>
               Jouer maintenant
             </a>
-            <a href="#wiki" class="px-6 py-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50">
+            <NuxtLink to="https://vidolia.gitbook.io/vidolia" target="_blank" class="px-6 py-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
                 <path fill="currentColor" d="M19 2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14m-2 3a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1z"/>
               </svg>
               Wiki
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@
               </h3>
               
               <div class="space-y-4">
-                <a href="/reglement-general" class="block p-4 bg-navy-900 rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-md group">
+                <NuxtLink to="/https://vidolia.gitbook.io/vidolia" target="_blank" class="block p-4 bg-navy-900 rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-md group">
                   <div class="flex items-center gap-4">
                     <div class="bg-blue-600/20 w-12 h-12 rounded-lg flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
@@ -111,9 +111,9 @@
                       <path fill="currentColor" d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z"/>
                     </svg>
                   </div>
-                </a>
+                </NuxtLink>
                 
-                <a href="/reglement-demons" class="block p-4 bg-navy-900 rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-md group">
+                <NuxtLink to="https://vidolia.gitbook.io/vidolia/categories/demons" target="_blank" class="block p-4 bg-navy-900 rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-md group">
                   <div class="flex items-center gap-4">
                     <div class="bg-red-600/20 w-12 h-12 rounded-lg flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-red-400 group-hover:text-red-300 transition-colors duration-300">
@@ -130,9 +130,9 @@
                       <path fill="currentColor" d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z"/>
                     </svg>
                   </div>
-                </a>
+                </NuxtLink>
                 
-                <a href="/reglement-pourfendeurs" class="block p-4 bg-navy-900 rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-md group">
+                <NuxtLink to="https://vidolia.gitbook.io/vidolia/categories/les-pourfendeurs" target="_blank" class="block p-4 bg-navy-900 rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:shadow-md group">
                   <div class="flex items-center gap-4">
                     <div class="bg-green-600/20 w-12 h-12 rounded-lg flex items-center justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-green-400 group-hover:text-green-300 transition-colors duration-300">
@@ -149,7 +149,7 @@
                       <path fill="currentColor" d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z"/>
                     </svg>
                   </div>
-                </a>
+                </NuxtLink>
               </div>
             </div>
             
@@ -197,12 +197,12 @@
                       </div>
                     </div>
                     
-                    <a href="https://vidolia.fr/wiki-demonslayer" target="_blank" class="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30">
+                    <NuxtLink to="https://vidolia.gitbook.io/vidolia" target="_blank" class="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30">
                       <span>Consulter le Wiki</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="transform group-hover:translate-x-1 transition-all duration-300">
                         <path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z"/>
                       </svg>
-                    </a>
+                    </NuxtLink>
                   </div>
                 </div>
               </div>
