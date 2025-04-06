@@ -5,10 +5,10 @@
       <div class="flex md:hidden justify-between items-center">
         <!-- Logo et nom -->
         <div class="flex items-center gap-3">
-          <NuxtLink to="/">
-          <img src="/assets/images/navbar/logo_vidolia.png" alt="Vidolia Logo" class="w-10 h-10" />
-          <span class="text-white font-bold text-xl">Vidolia</span>
-        </NuxtLink>
+          <NuxtLink :to="localePath('/')"> <!-- Use localePath for home link -->
+            <img src="/assets/images/navbar/logo_vidolia.png" alt="Vidolia Logo" class="w-10 h-10" />
+            <span class="text-white font-bold text-xl">{{ $t('navbar.brand') }}</span>
+          </NuxtLink>
         </div>
         
         <!-- Boutons principaux -->
@@ -16,32 +16,33 @@
           <!-- Sélecteur de langue -->
           <div class="relative group">
             <button class="text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
-              <span>FR</span>
+              <span>{{ locale.toUpperCase() }}</span> <!-- Display current locale -->
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
             </button>
-            <div class="absolute right-0 mt-2 bg-navy-800 border border-blue-800/50 rounded-lg shadow-lg py-2 w-28 hidden group-hover:block transform transition-all duration-300 origin-top-right z-50">
-              <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-blue-800/20 hover:text-white transition-colors">Français</a>
-              <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-blue-800/20 hover:text-white transition-colors">Русский</a>
-              <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-blue-800/20 hover:text-white transition-colors">Deutsch</a>
+            <div class="absolute right-0 mt-2 bg-navy-800 border border-blue-800/50 rounded-lg shadow-lg py-2 w-32 hidden group-hover:block transform transition-all duration-300 origin-top-right z-50">
+              <!-- Loop through available locales -->
+              <NuxtLink v-for="loc in availableLocales" :key="loc.code" :to="switchLocalePath(loc.code)" class="block px-4 py-2 text-gray-300 hover:bg-blue-800/20 hover:text-white transition-colors">
+                {{ loc.name }}
+              </NuxtLink>
             </div>
           </div>
-          
+
           <!-- Liens des serveurs -->
-          <NuxtLink to="/demonSlayer" class="text-gray-300 hover:text-white transition-colors relative nav-link">Demon Slayer RP</NuxtLink>
-          <a href="/bleach" class="text-gray-300 hover:text-white transition-colors relative nav-link">Bleach RP</a>
-          
+          <NuxtLink :to="localePath('/demonSlayer')" class="text-gray-300 hover:text-white transition-colors relative nav-link">{{ $t('navbar.demonSlayer') }}</NuxtLink>
+          <!-- <NuxtLink :to="localePath('/bleach')" class="text-gray-300 hover:text-white transition-colors relative nav-link">{{ $t('navbar.bleach') }}</NuxtLink> -->
+
           <!-- Boutique et connexion -->
-          <NuxtLink to="/boutique" class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
+          <NuxtLink :to="localePath('/boutique')" class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
-            <span>Boutique</span>
+            <span>{{ $t('navbar.shop') }}</span>
           </NuxtLink>
-          
+
         </div>
       </div>
       
@@ -49,14 +50,16 @@
       <div class="md:flex hidden justify-between items-center">
         <!-- Logo et Nom -->
         <div class="flex items-center gap-2">
-          <img src="/assets/images/navbar/logo_vidolia.png" alt="Vidolia Logo" class="w-8 h-8" />
-          <span class="text-white font-bold text-lg">Vidolia</span>
+          <NuxtLink :to="localePath('/')"> <!-- Use localePath for home link -->
+            <img src="/assets/images/navbar/logo_vidolia.png" alt="Vidolia Logo" class="w-8 h-8" />
+            <span class="text-white font-bold text-lg">{{ $t('navbar.brand') }}</span>
+          </NuxtLink>
         </div>
-        
+
         <!-- Boutons principaux condensés -->
         <div class="flex items-center gap-3">
           <!-- Bouton boutique -->
-          <NuxtLink to="/boutique" class="flex items-center justify-center text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 p-2 rounded-lg transition-all duration-300">
+          <NuxtLink :to="localePath('/boutique')" class="flex items-center justify-center text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 p-2 rounded-lg transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
@@ -76,86 +79,70 @@
     </nav>
     
     <!-- Menu mobile déroulant -->
-    <div v-show="mobileMenuOpen" class="md:hidden bg-navy-800 border-b border-blue-800/50 animate-slide-down">
+    <div v-show="mobileMenuOpen" class="md:flex hidden bg-navy-800 border-b border-blue-800/50 animate-slide-down"> <!-- Changed md:hidden to md:flex hidden -->
       <div class="max-w-[95%] mx-auto py-4 space-y-4">
         <!-- Sélecteur de langue -->
         <div class="border-b border-blue-800/30 pb-3">
-          <p class="text-gray-400 text-sm mb-2">Langue</p>
+          <p class="text-gray-400 text-sm mb-2">{{ $t('navbar.lang') }}</p>
           <div class="flex gap-2">
-            <button class="px-3 py-1 text-white bg-blue-600 rounded-md">FR</button>
-            <button class="px-3 py-1 text-gray-300 hover:bg-navy-700 rounded-md">RU</button>
-            <button class="px-3 py-1 text-gray-300 hover:bg-navy-700 rounded-md">DE</button>
+            <!-- Loop through available locales for buttons -->
+            <button v-for="loc in availableLocales" :key="loc.code" @click="changeLocale(loc.code)"
+                    :class="['px-3 py-1 rounded-md transition-colors', locale === loc.code ? 'text-white bg-blue-600' : 'text-gray-300 hover:bg-navy-700']">
+              {{ loc.code.toUpperCase() }}
+            </button>
           </div>
         </div>
-        
+
         <!-- Liens vers les serveurs -->
         <div class="border-b border-blue-800/30 pb-3">
-          <p class="text-gray-400 text-sm mb-2">Nos serveurs</p>
+          <p class="text-gray-400 text-sm mb-2">{{ $t('navbar.servers') }}</p>
           <div class="space-y-2">
-            <a href="/demon-slayer" class="flex items-center justify-between px-3 py-2 bg-navy-900 rounded-lg hover:bg-navy-700 transition-colors">
-              <span class="text-white">Demon Slayer RP</span>
+            <NuxtLink :to="localePath('/demonSlayer')" class="flex items-center justify-between px-3 py-2 bg-navy-900 rounded-lg hover:bg-navy-700 transition-colors">
+              <span class="text-white">{{ $t('navbar.demonSlayer') }}</span>
               <div class="flex items-center">
                 <span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2 pulse-green"></span>
-                <span class="text-gray-400 text-sm">42 joueurs</span>
+                <span class="text-gray-400 text-sm">42 {{ $t('navbar.players') }}</span>
               </div>
-            </a>
-            <a href="/bleach" class="flex items-center justify-between px-3 py-2 bg-navy-900 rounded-lg hover:bg-navy-700 transition-colors">
-              <span class="text-white">Bleach RP</span>
+            </NuxtLink>
+            <!-- <NuxtLink :to="localePath('/bleach')" class="flex items-center justify-between px-3 py-2 bg-navy-900 rounded-lg hover:bg-navy-700 transition-colors">
+              <span class="text-white">{{ $t('navbar.bleach') }}</span>
               <div class="flex items-center">
                 <span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2 pulse-green"></span>
-                <span class="text-gray-400 text-sm">38 joueurs</span>
-              </div>
-            </a>
+                <span class="text-gray-400 text-sm">38 {{ $t('navbar.players') }}</span>
+            </a> -->
           </div>
         </div>
-        
+
         <!-- Boutons principaux -->
         <div class="flex flex-col gap-2">
-          <a href="/boutique" class="flex items-center justify-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300">
+          <NuxtLink :to="localePath('/boutique')" class="flex items-center justify-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
-            <span>Boutique</span>
-          </a>
-          
+            <span>{{ $t('navbar.shop') }}</span>
+          </NuxtLink>
+
           <a href="/connexion" class="flex items-center justify-center gap-2 text-white bg-navy-900 hover:bg-navy-700 px-4 py-2 rounded-lg border border-blue-500/30 hover:border-blue-500/50 transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
               <polyline points="10 17 15 12 10 7"></polyline>
               <line x1="15" y1="12" x2="3" y2="12"></line>
             </svg>
-            <span>Se connecter avec Discord/Steam</span>
+            <span>{{ $t('navbar.login') }}</span>
           </a>
         </div>
       </div>
     </div>
-    
+
     <!-- Bandeau des serveurs en bas -->
-    <!-- <div class="hidden lg:block w-full bg-navy-800 border-t border-blue-800/30 py-2 absolute bottom-0 transform translate-y-full hover:translate-y-0 transition-transform duration-300 z-40">
-      <div class="max-w-[95%] xl:max-w-[90%] mx-auto flex justify-between items-center">
-        <p class="text-blue-400 text-sm font-medium">Serveurs en ligne</p>
-        
-        <div class="flex gap-8">
-          <a href="/demon-slayer" class="flex items-center gap-3 group">
-            <span class="h-2.5 w-2.5 bg-green-500 rounded-full pulse-green"></span>
-            <span class="text-white group-hover:text-blue-400 transition-colors">Demon Slayer RP</span>
-            <span class="text-gray-400 text-sm">42 joueurs</span>
-          </a>
-          
-          <a href="/bleach" class="flex items-center gap-3 group">
-            <span class="h-2.5 w-2.5 bg-green-500 rounded-full pulse-green"></span>
-            <span class="text-white group-hover:text-blue-400 transition-colors">Bleach RP</span>
-            <span class="text-gray-400 text-sm">38 joueurs</span>
-          </a>
-        </div>
-      </div>
-    </div> -->
+    <!-- ... (bandeau inférieur inchangé pour l'instant) ... -->
   </header>
 </template>
 
 <style>
+/* ... (styles inchangés) ... */
 /* Couleurs de base */
 .bg-navy-900 {
   background-color: #111827;
@@ -225,22 +212,33 @@
   to {
     opacity: 1;
     transform: scaleY(1);
-    max-height: 500px;
+    max-height: 500px; /* Adjust as needed */
   }
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      mobileMenuOpen: false
-    }
-  },
-  methods: {
-    toggleMobileMenu() {
-      this.mobileMenuOpen = !this.mobileMenuOpen
-    }
-  }
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+import { useI18n } from '#imports' // Auto-imported by Nuxt
+
+const { locale, locales, setLocale, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath() // Auto-imported by Nuxt
+const localePath = useLocalePath() // Auto-imported by Nuxt
+
+const mobileMenuOpen = ref(false)
+
+const availableLocales = computed(() => {
+  // Filter out the current locale for the dropdown/buttons
+  // return locales.value.filter(i => i.code !== locale.value) // Keep this if you want to hide current locale
+  return locales.value // Show all locales including current
+})
+
+function toggleMobileMenu() {
+  mobileMenuOpen.value = !mobileMenuOpen.value
+}
+
+async function changeLocale(newLocale: string) {
+  await setLocale(newLocale)
+  mobileMenuOpen.value = false // Close menu after selection
 }
 </script>

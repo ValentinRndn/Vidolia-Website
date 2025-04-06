@@ -1,0 +1,30 @@
+{
+  "navbar": {
+    "brand": "Vidolia",
+    "lang": "Sprache",
+    "servers": "Unsere Server",
+    "demonSlayer": "Demon Slayer RP",
+    "bleach": "Bleach RP",
+    "shop": "Shop",
+    "login": "Mit Discord/Steam anmelden",
+    "players": "Spieler",
+    "french": "Français",
+    "russian": "Русский",
+    "german": "Deutsch"
+  },
+  "boutique": {
+    "bannerTitle1": "Willkommen im",
+    "bannerTitle2": "Shop",
+    "playButton": "Spielen",
+    "discordButton": "Discord",
+    "welcomeTitle": "Willkommen in unserem offiziellen Shop!",
+    "welcomeText": "Hier kannst du verschiedene Vorteile und exklusive Gegenstände kaufen, um dein Erlebnis auf unserem GMod-Server zu verbessern. Ob spezielle Waffen, einzigartige Skins, VIP-Ränge oder In-Game-Boni – alles ist darauf ausgelegt, dass du dein Abenteuer in vollen Zügen genießen kannst. Jeder Kauf unterstützt direkt den Server und hilft dabei, immer immersivere Inhalte anzubieten. Mach mit und rüste dich jetzt aus!",
+    "chooseServerTitle": "Wähle deinen Server",
+    "demonSlayerTitle": "Demon Slayer",
+    "demonSlayerDescription": "Tauche ein in die fesselnde Welt der Dämonenjäger. Entwickle deine Fähigkeiten, schließe dich den Elitekorps an und stelle dich den furchterregendsten Dämonen.",
+    "bleachTitle": "Bleach",
+    "bleachDescription": "Werde ein mächtiger Shinigami und bekämpfe die Hollows. Meistere dein Zanpakutō, entwickle dein Bankai und beschütze die Soul Society.",
+    "serverStatus": "Server aktiv",
+    "exploreButton": "Shop erkunden"
+  }
+}
