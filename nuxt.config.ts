@@ -68,9 +68,13 @@ export default defineNuxtConfig({
       }
     ],
     lazy: true,
-    langDir: 'i18n/locales', // Chemin modifié
+    langDir: 'locales',
     defaultLocale: 'fr',
     strategy: 'prefix_except_default',
-    vueI18n: './i18n/config.ts' // Chemin modifié
+    
+    // Ajoutez cette configuration pour résoudre le problème
+    bundle: {
+      optimizeTranslationDirective: false
+    }
   }
 })

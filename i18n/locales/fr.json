@@ -30,5 +30,134 @@
     "admin": "Admin",
     "moderator": "Modérateur",
     "developer": "Développeur"
-  }
+  },
+  "home": {
+    "hero": {
+      "title": "Demon Slayer RP",
+      "subtitle": "Rejoignez le combat entre les pourfendeurs de démons et les forces démoniaques de Muzan. Développez vos techniques de respiration et forgez votre propre légende.",
+      "play": "Jouer maintenant",
+      "wiki": "Wiki"
+    },
+    "welcome": {
+      "title": "Bienvenue sur Vidolia Demon Slayer",
+      "paragraph1": "Notre serveur Demon Slayer RP vous plonge dans un univers immersif inspiré de l'œuvre de Koyoharu Gotouge. Choisissez votre camp entre les pourfendeurs de démons et les démons, développez vos compétences et participez à des quêtes épiques.",
+      "paragraph2": "En tant que pourfendeur, maîtrisez différentes techniques de respiration et combattez pour protéger l'humanité. En tant que démon, développez vos arts démoniaques et servez Muzan Kibutsuji dans sa quête de pouvoir absolu.",
+      "paragraph3": "Notre équipe de modération est présente pour vous offrir une expérience RP de qualité, avec des événements réguliers et un univers en constante évolution.",
+      "explore": "Un monde à explorer",
+      "exploreDesc": "Découvrez des lieux emblématiques et forgez votre propre chemin dans cet univers impitoyable."
+    },
+    "resources": {
+      "title": "Ressources Importantes",
+      "subtitle": "Tout ce dont vous avez besoin pour commencer votre aventure ou approfondir vos connaissances sur l'univers.",
+      "rules": "Règlements",
+      "general": "Règlement Général",
+      "generalDesc": "Les règles globales à respecter sur le serveur",
+      "demons": "Règlement Démons",
+      "demonsDesc": "Les règles spécifiques pour jouer un démon",
+      "slayers": "Règlement Pourfendeurs",
+      "slayersDesc": "Les règles spécifiques pour les pourfendeurs"
+    },
+    "wiki": {
+      "title": "Wiki Demon Slayer",
+      "subtitle": "Tout savoir sur l'univers",
+      "description": "Notre wiki complet regroupe toutes les informations sur le monde de Demon Slayer, les techniques de respiration, les arts démoniaques, les grades et bien plus encore.",
+      "feature1": "Guide des débutants",
+      "feature2": "Techniques de respiration",
+      "feature3": "Arts démoniaques",
+      "feature4": "FAQ & Guide de RP",
+      "consult": "Consulter le Wiki"
+    },
+    "cta": {
+      "title": "Prêt à rejoindre l'aventure ?",
+      "subtitle": "Le monde a besoin de héros pour combattre les forces démoniaques. Devenez un pourfendeur légendaire ou un puissant démon et écrivez votre propre histoire.",
+      "start": "Commencer l'aventure",
+      "discord": "Rejoindre le Discord"
+    }
+  },
+  "bleach": {
+    "hero": {
+      "title": "Bleach RP",
+      "subtitle": "Rejoignez le combat entre les Shinigamis et les Hollows. Développez votre Zanpakutō et devenez une légende dans la Soul Society.",
+      "play": "Jouer maintenant",
+      "wiki": "Wiki"
+    },
+    "welcome": {
+      "title": "Bienvenue sur Vidolia Bleach",
+      "paragraph1": "Notre serveur Bleach RP vous plonge dans un univers immersif inspiré de l'œuvre de Tite Kubo. Choisissez votre camp entre les Shinigamis, Quincys ou Arrancars, développez vos compétences et participez à des quêtes épiques.",
+      "paragraph2": "En tant que Shinigami, maîtrisez votre Zanpakutō et combattez pour protéger les âmes des Hollows. En tant qu'Arrancar, développez votre Resurrección et suivez Aizen dans sa quête de pouvoir.",
+      "paragraph3": "Notre équipe de modération est présente pour vous offrir une expérience RP de qualité, avec des événements réguliers et un univers en constante évolution.",
+      "explore": "Un monde à explorer",
+      "exploreDesc": "Découvrez des lieux emblématiques comme la Soul Society, le Hueco Mundo et forgez votre propre chemin dans cet univers captivant."
+    },
+    "resources": {
+      "title": "Ressources Importantes",
+      "subtitle": "Tout ce dont vous avez besoin pour commencer votre aventure ou approfondir vos connaissances sur l'univers.",
+      "rules": "Règlements",
+      "general": "Règlement Général",
+      "generalDesc": "Les règles globales à respecter sur le serveur",
+      "demons": "Règlement Hollows",
+      "demonsDesc": "Les règles spécifiques pour jouer un Hollow ou Arrancar",
+      "slayers": "Règlement Shinigamis",
+      "slayersDesc": "Les règles spécifiques pour les Shinigamis"
+    },
+    "wiki": {
+      "title": "Wiki Bleach",
+      "subtitle": "Tout savoir sur l'univers",
+      "description": "Notre wiki complet regroupe toutes les informations sur le monde de Bleach, les Zanpakutōs, les techniques de Kidō, les grades des Shinigamis et bien plus encore.",
+      "feature1": "Guide des débutants",
+      "feature2": "Techniques de Kidō",
+      "feature3": "Pouvoirs des Hollows",
+      "feature4": "FAQ & Guide de RP",
+      "consult": "Consulter le Wiki"
+    },
+    "cta": {
+      "title": "Prêt à rejoindre l'aventure ?",
+      "subtitle": "La Soul Society a besoin de héros pour combattre les Hollows. Devenez un Shinigami légendaire ou un puissant Arrancar et écrivez votre propre histoire.",
+      "start": "Commencer l'aventure",
+      "discord": "Rejoindre le Discord"
+    }
+  },
+  "boutique": {
+    "bannerTitle1": "Notre ",
+    "bannerTitle2": "Boutique",
+    "playButton": "Jouer",
+    "discordButton": "Discord",
+    "welcomeTitle": "Bienvenue dans notre boutique",
+    "welcomeText": "Notre boutique vous propose une sélection d'articles exclusifs pour améliorer votre expérience de jeu. Tous nos achats contribuent au développement du serveur et nous permettent d'offrir une expérience de qualité.",
+    "chooseServerTitle": "Choisissez votre serveur",
+    "demonSlayerTitle": "Demon Slayer",
+    "demonSlayerDescription": "Devenez un puissant pourfendeur et combattez les démons. Maîtrisez des techniques de respiration et développez votre style unique.",
+    "serverStatus": "Serveur actif",
+    "exploreButton": "Explorer la boutique",
+    "bleachTitle": "Bleach",
+    "bleachDescription": "Devenez un puissant Shinigami et combattez les Hollows. Maîtrisez votre Zanpakutō, développez votre Bankai et protégez la Soul Society."
+  },
+  
+    "navbar": {
+      "brand": "Vidolia",
+      "lang": "Langue",
+      "servers": "Serveurs",
+      "demonSlayer": "Demon Slayer",
+      "bleach": "Bleach",
+      "players": "joueurs",
+      "shop": "Boutique",
+      "login": "Connexion"
+  },
+  "footer": {
+  "description": "Une communauté de jeu de rôle immersive où la créativité et l'imagination prennent vie à travers des univers fascinants.",
+  "navigation": "Navigation",
+  "home": "Accueil",
+  "demonSlayer": "Demon Slayer RP",
+  "bleach": "Bleach RP",
+  "shop": "Boutique",
+  "rules": "Règlements",
+  "servers": "Serveurs",
+  "online": "En ligne",
+  "playersConnected": "Joueurs connectés",
+  "copyright": "© 2025 Vidolia. Tous droits réservés.",
+  "legalNotice": "Mentions légales",
+  "privacyPolicy": "Politique de confidentialité",
+  "termsOfService": "CGU",
+  "contact": "Contact"
+}
 }

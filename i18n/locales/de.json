@@ -1,28 +1,28 @@
 {
   "hero": {
     "welcome": "Willkommen bei",
-    "description": "Tauchen Sie mit unserem einzigartigen GMod-Server in die Welt von Demon Slayer ein. Kämpfen Sie gegen Dämonen, schließen Sie sich den Dämonenjägern an und erleben Sie ein immersives RP-Erlebnis.",
+    "description": "Tauchen Sie ein in die Welt von Demon Slayer mit unserem einzigartigen GMod-Server. Kämpfen Sie gegen Dämonen, schließen Sie sich den Dämonentötern an und erleben Sie ein immersives RP-Erlebnis.",
     "play": "Spielen",
     "discord": "Discord"
   },
   "servers": {
     "title1": "Server #1",
-    "description1": "Tauchen Sie mit unserem Haupt-RP-Server in die Welt von Demon Slayer ein. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
+    "description1": "Tauchen Sie ein in die Welt von Demon Slayer mit unserem Haupt-RP-Server. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
     "title2": "Server #2",
-    "description2": "Tauchen Sie mit unserem Haupt-RP-Server in die Welt von Demon Slayer ein. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
+    "description2": "Tauchen Sie ein in die Welt von Demon Slayer mit unserem Haupt-RP-Server. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
     "online": "Online:"
   },
   "payment": {
-    "security": "Bezahlen Sie sicher",
+    "security": "Sicher bezahlen",
     "with": "Mit Tebex",
     "methods": "Mastercard, Visa, Paypal und viele mehr...",
     "shop": "Shop"
   },
   "about": {
     "vidolia": "Vidolia",
-    "title": "Eine Garry's mod Gemeinschaft basierend auf der Welt von Demon Slayer",
-    "description1": "Auf dem Server können Sie sowohl einen Dämon als auch einen Dämonenjäger verkörpern und Missionen erfüllen oder sogar gegeneinander kämpfen. Zeigen Sie Ihre Stärke und behaupten Sie Ihre Überlegenheit in Gebietskampf-Events! Aber wer wird stärker sein - die Menschenfresser oder die Dämonenjäger?",
-    "description2": "Unser Server wurde mit unseren eigenen Händen erstellt, um Ihnen ein außergewöhnliches Spielerlebnis zu bieten!"
+    "title": "Eine Garry's mod-Gemeinschaft, die auf der Welt von Demon Slayer basiert",
+    "description1": "Auf dem Server können Sie einen Dämon oder einen Dämonentöter verkörpern und Missionen erfüllen oder sogar gegeneinander kämpfen. Zeigen Sie Ihre Stärke und setzen Sie Ihre Überlegenheit bei Gebietsereignissen durch! Aber wer wird stärker sein - die Menschenfresser oder die Dämonenjäger!",
+    "description2": "Unser Server wurde von uns erstellt, um Ihnen ein außergewöhnliches Spielerlebnis zu bieten!"
   },
   "team": {
     "title": "Unser Team",
@@ -30,5 +30,133 @@
     "admin": "Admin",
     "moderator": "Moderator",
     "developer": "Entwickler"
-  }
+  },
+  "home": {
+    "hero": {
+      "title": "Demon Slayer RP",
+      "subtitle": "Schließen Sie sich dem Kampf zwischen den Dämonentötern und Muzans dämonischen Kräften an. Entwickeln Sie Ihre Atemtechniken und schmieden Sie Ihre eigene Legende.",
+      "play": "Jetzt spielen",
+      "wiki": "Wiki"
+    },
+    "welcome": {
+      "title": "Willkommen bei Vidolia Demon Slayer",
+      "paragraph1": "Unser Demon Slayer RP-Server taucht Sie in ein immersives Universum ein, das von Koyoharu Gotouges Werk inspiriert ist. Wählen Sie Ihre Seite zwischen Dämonentötern und Dämonen, entwickeln Sie Ihre Fähigkeiten und nehmen Sie an epischen Quests teil.",
+      "paragraph2": "Als Dämonentöter beherrschen Sie verschiedene Atemtechniken und kämpfen zum Schutz der Menschheit. Als Dämon entwickeln Sie Ihre dämonischen Künste und dienen Muzan Kibutsuji bei seinem Streben nach absoluter Macht.",
+      "paragraph3": "Unser Moderationsteam ist anwesend, um Ihnen ein qualitativ hochwertiges RP-Erlebnis zu bieten, mit regelmäßigen Events und einem sich ständig weiterentwickelnden Universum.",
+      "explore": "Eine Welt zum Erkunden",
+      "exploreDesc": "Entdecken Sie ikonische Orte und schmieden Sie Ihren eigenen Weg in diesem erbarmungslosen Universum."
+    },
+    "resources": {
+      "title": "Wichtige Ressourcen",
+      "subtitle": "Alles, was Sie brauchen, um Ihr Abenteuer zu beginnen oder Ihr Wissen über das Universum zu vertiefen.",
+      "rules": "Regeln",
+      "general": "Allgemeine Regeln",
+      "generalDesc": "Die globalen Regeln, die auf dem Server zu beachten sind",
+      "demons": "Dämonenregeln",
+      "demonsDesc": "Spezifische Regeln für das Spielen eines Dämons",
+      "slayers": "Dämonentöter-Regeln",
+      "slayersDesc": "Spezifische Regeln für Dämonentöter"
+    },
+    "wiki": {
+      "title": "Demon Slayer Wiki",
+      "subtitle": "Alles über das Universum wissen",
+      "description": "Unser umfassendes Wiki enthält alle Informationen über die Welt von Demon Slayer, Atemtechniken, dämonische Künste, Ränge und vieles mehr.",
+      "feature1": "Anfängerleitfaden",
+      "feature2": "Atemtechniken",
+      "feature3": "Dämonische Künste",
+      "feature4": "FAQ & RP-Leitfaden",
+      "consult": "Wiki konsultieren"
+    },
+    "cta": {
+      "title": "Bereit, dem Abenteuer beizutreten?",
+      "subtitle": "Die Welt braucht Helden, um gegen dämonische Kräfte zu kämpfen. Werden Sie ein legendärer Dämonentöter oder ein mächtiger Dämon und schreiben Sie Ihre eigene Geschichte.",
+      "start": "Abenteuer beginnen",
+      "discord": "Discord beitreten"
+    }
+  },
+  "bleach": {
+    "hero": {
+      "title": "Bleach RP",
+      "subtitle": "Treten Sie dem Kampf zwischen Shinigami und Hollows bei. Entwickeln Sie Ihr Zanpakutō und werden Sie eine Legende in der Soul Society.",
+      "play": "Jetzt spielen",
+      "wiki": "Wiki"
+    },
+    "welcome": {
+      "title": "Willkommen bei Vidolia Bleach",
+      "paragraph1": "Unser Bleach RP-Server taucht Sie in ein fesselndes Universum ein, das von Tite Kubos Werk inspiriert ist. Wählen Sie Ihre Fraktion zwischen Shinigami, Quincy oder Arrancar, entwickeln Sie Ihre Fähigkeiten und nehmen Sie an epischen Abenteuern teil.",
+      "paragraph2": "Als Shinigami beherrschen Sie Ihr Zanpakutō und kämpfen zum Schutz der Seelen vor Hollows. Als Arrancar entwickeln Sie Ihre Resurrección und folgen Aizen bei seinem Streben nach Macht.",
+      "paragraph3": "Unser Moderatorenteam sorgt für ein qualitativ hochwertiges RP-Erlebnis mit regelmäßigen Events und einem sich ständig weiterentwickelnden Universum.",
+      "explore": "Eine Welt zum Erkunden",
+      "exploreDesc": "Entdecken Sie ikonische Orte wie die Soul Society und Hueco Mundo und gestalten Sie Ihren eigenen Weg in diesem faszinierenden Universum."
+    },
+    "resources": {
+      "title": "Wichtige Ressourcen",
+      "subtitle": "Alles, was Sie brauchen, um Ihr Abenteuer zu beginnen oder Ihr Wissen über das Universum zu vertiefen.",
+      "rules": "Regeln",
+      "general": "Allgemeine Regeln",
+      "generalDesc": "Die globalen Regeln, die auf dem Server zu beachten sind",
+      "demons": "Hollow-Regeln",
+      "demonsDesc": "Spezifische Regeln für das Spielen eines Hollow oder Arrancar",
+      "slayers": "Shinigami-Regeln",
+      "slayersDesc": "Spezifische Regeln für Shinigami"
+    },
+    "wiki": {
+      "title": "Bleach Wiki",
+      "subtitle": "Alles über das Universum wissen",
+      "description": "Unser umfassendes Wiki enthält alle Informationen über die Welt von Bleach, Zanpakutō, Kidō-Techniken, Ränge der Shinigami und vieles mehr.",
+      "feature1": "Anfängerleitfaden",
+      "feature2": "Kidō-Techniken",
+      "feature3": "Hollow-Fähigkeiten",
+      "feature4": "FAQ & RP-Leitfaden",
+      "consult": "Wiki konsultieren"
+    },
+    "cta": {
+      "title": "Bereit, dem Abenteuer beizutreten?",
+      "subtitle": "Die Soul Society braucht Helden, um gegen Hollows zu kämpfen. Werden Sie ein legendärer Shinigami oder ein mächtiger Arrancar und schreiben Sie Ihre eigene Geschichte.",
+      "start": "Abenteuer beginnen",
+      "discord": "Discord beitreten"
+    }
+  },
+    "boutique": {
+      "bannerTitle1": "Unser ",
+      "bannerTitle2": "Shop",
+      "playButton": "Spielen",
+      "discordButton": "Discord",
+      "welcomeTitle": "Willkommen in unserem Shop",
+      "welcomeText": "Unser Shop bietet Ihnen eine Auswahl an exklusiven Artikeln, um Ihr Spielerlebnis zu verbessern. Alle Ihre Einkäufe tragen zur Entwicklung des Servers bei und ermöglichen es uns, ein qualitativ hochwertiges Erlebnis zu bieten.",
+      "chooseServerTitle": "Wählen Sie Ihren Server",
+      "demonSlayerTitle": "Demon Slayer",
+      "demonSlayerDescription": "Werden Sie ein mächtiger Dämonentöter und kämpfen Sie gegen Dämonen. Meistern Sie Atemtechniken und entwickeln Sie Ihren eigenen Stil.",
+      "serverStatus": "Server aktiv",
+      "exploreButton": "Shop erkunden",
+      "bleachTitle": "Bleach",
+      "bleachDescription": "Werden Sie ein mächtiger Shinigami und kämpfen Sie gegen Hollows. Meistern Sie Ihr Zanpakutō, entwickeln Sie Ihr Bankai und beschützen Sie die Soul Society."
+    },
+      "navbar": {
+        "brand": "Vidolia",
+        "lang": "Sprache",
+        "servers": "Server",
+        "demonSlayer": "Demon Slayer",
+        "bleach": "Bleach",
+        "players": "Spieler",
+        "shop": "Shop",
+        "login": "Anmelden"
+      },
+      "footer": {
+  "description": "Eine immersive Rollenspiel-Community, in der Kreativität und Fantasie durch faszinierende Universen zum Leben erweckt werden.",
+  "navigation": "Navigation",
+  "home": "Startseite",
+  "demonSlayer": "Demon Slayer RP",
+  "bleach": "Bleach RP",
+  "shop": "Shop",
+  "rules": "Regeln",
+  "servers": "Server",
+  "online": "Online",
+  "playersConnected": "Verbundene Spieler",
+  "copyright": "© 2025 Vidolia. Alle Rechte vorbehalten.",
+  "legalNotice": "Impressum",
+  "privacyPolicy": "Datenschutzrichtlinie",
+  "termsOfService": "AGB",
+  "contact": "Kontakt"
+}
 }

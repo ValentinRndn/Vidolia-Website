@@ -3,10 +3,10 @@
     <!-- Particules flottantes d'arrière-plan -->
     <div class="particles-background absolute inset-0 z-0"></div>
 
-    <!-- Sélecteur de langue -->
+    <!-- Sélecteur de langue
     <div class="absolute top-4 right-4 z-50">
       <LanguageSwitcher />
-    </div>
+    </div> -->
 
     <!-- Hero Section -->
     <section class="relative bg-landing bg-cover bg-center bg-no-repeat mx-auto flex items-center justify-center pb-24 lg:flex-col lg:pt-24">

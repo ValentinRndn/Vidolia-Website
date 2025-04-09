@@ -113,52 +113,51 @@
             </NuxtLink>
           </div>
           
-          <!-- Serveur Bleach -->
-          <!-- <div class="server-card bg-server-card rounded-xl p-6 border border-blue-500 relative overflow-hidden shadow-xl hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group sm:w-full md:w-[450px] lg:w-[500px] h-[300px] flex flex-col justify-between">
-            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
-            
-            <div class="absolute inset-0 bg-serverCard bg-cover bg-center opacity-30 transition-all duration-500 group-hover:opacity-40"></div>
-            
-            <div class="absolute inset-0 server-particles opacity-20"></div>
-            
-            <div class="relative z-10">
-              <div class="flex justify-between items-start mb-4">
-                <h3 class="text-3xl font-bold text-white glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">Bleach</h3>
-                
-                <div class="server-icon-container w-16 h-16 flex items-center justify-center bg-blue-500/10 rounded-full group-hover:bg-blue-500/20 transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="text-blue-400 transform transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
-                    <path fill="currentColor" d="M7.05 3.5c.99 0 1.93.35 2.67.99l.13.15c.76.64 1.81.99 2.9.99c1.28 0 2.5-.47 3.42-1.3a.756.756 0 0 1 1.06.1c.27.32.23.8-.1 1.06c-1.22 1.08-2.75 1.64-4.39 1.64c-1.39 0-2.72-.43-3.69-1.29c-.15-.17-.52-.52-1-.52c-.71 0-1.3.59-1.3 1.3c0 .73.59 1.3 1.35 1.3c.76 0 1.35-.58 1.36-1.27v-.13c0-.43.35-.8.8-.8c.43 0 .8.36.8.8v.12c-.01 1.55-1.22 2.77-2.95 2.77c-1.67 0-2.95-1.27-2.95-2.9c-.01-1.63 1.27-2.91 2.89-2.91M21 12c0 1.09-.21 2.18-.61 3.2c-.26.66-.98 1.08-1.81 1.08c-.82 0-1.54-.41-1.8-1.06c-.71-1.77-.69-3.68.01-5.43c.28-.68 1.05-.96 1.72-.7c.67.25.95.95.72 1.64c-.44 1.1-.44 2.3-.01 3.4c.07.16.16.25.35.25c.22 0 .33-.12.39-.28c.31-.8.47-1.65.47-2.5c0-3.9-3.18-7.05-7.1-7.05c-.54 0-1.1.07-1.66.2C10 4.87 9.34 4.67 8.72 4.67c-.61 0-1.21.2-1.67.57c-.33.26-.8.22-1.06-.1c-.26-.33-.21-.8.12-1.07c.76-.6 1.7-.9 2.62-.9c.85 0 1.65.25 2.34.74C11.73 3.31 12.37 3.2 13 3.2c4.76 0 8.63 3.85 8.63 8.6c0 1.09-.21 2.18-.62 3.2c-.78 1.95-2.82 3.22-5.27 3.22c-2.45 0-4.5-1.27-5.27-3.22c-.15-.37.03-.8.4-.95c.37-.15.8.03.95.4c.58 1.47 2.12 2.38 3.92 2.38c1.8 0 3.34-.9 3.92-2.38c.08-.21.17-.43.24-.64c.24-.68.91-.95 1.59-.7c.67.24.95.94.72 1.63c-.06.15-.11.3-.17.46c-1 2.53-3.61 4.03-6.29 4.03c-2.69 0-5.3-1.5-6.3-4.03C3.21 14.18 3 13.09 3 12c0-.46.04-.95.13-1.42c.43.29.93.42 1.42.42c1.37 0 2.5-.93 2.74-2.22c.75.89 1.84 1.38 3.2 1.38c1.87 0 3.65-.68 5.11-1.95c1.26 2.42 3.11 3.59 5.27 3.59c.4 0 .8.32.8.8s-.4.8-.8.8c-2.73 0-5.12-1.58-6.57-4.5c-.2.09-.48.2-.7.3c-.47.2-1 .31-1.55.31c-.7 0-1.35-.15-1.96-.46c-.37-.19-.83-.03-1.01.33c-.18.36-.04.8.33.99c.82.41 1.74.62 2.66.62c.46 0 .94-.06 1.4-.19c.13-.04.26-.09.38-.14c.73 1.58 1.92 2.7 3.44 3.43c.36.17.51.6.34.96c-.17.36-.61.52-.96.34c-1.27-.61-2.4-1.48-3.28-2.65c-1.5.6-3.18.62-4.67 0c-.36-.15-.54-.57-.4-.93c.14-.36.55-.53.91-.4c.56.23 1.29.36 2.07.36c.78 0 1.52-.13 2.09-.36z"/>
-                  </svg>
-                </div>
-              </div>
-              
-              <p class="text-gray-300 mb-6 group-hover:text-gray-100 transition-colors duration-300">
-                Devenez un puissant Shinigami et combattez les Hollows. Maîtrisez votre Zanpakutō, 
-                développez votre Bankai et protégez la Soul Society.
-              </p>
-              
-              <div class="flex items-center gap-4 mb-4">
-                <div class="flex items-center gap-2">
-                  <span class="h-2.5 w-2.5 bg-green-500 rounded-full pulse-green"></span>
-                  <span class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Serveur actif</span>
-                </div>
-                
-                <div class="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="text-blue-400">
-                    <path fill="currentColor" d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7Z"/>
-                  </svg>
-                  <span class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">38 joueurs</span>
-                </div>
-              </div>  
-            </div>
-            
-            <NuxtLink to="/boutique/bleach" class="relative z-10 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 rounded-lg text-center font-medium transition-all duration-300 hover:shadow-blue-500/30 hover:shadow-md group-hover:scale-105 flex items-center justify-center gap-2">
-              <span>Explorer la boutique</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="transform transition-all duration-300 group-hover:translate-x-1">
-                <path fill="currentColor" d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6z"/>
-              </svg>
-            </NuxtLink>
-          </div> -->
+        <!-- Serveur Bleach -->
+<!-- <div class="server-card bg-server-card rounded-xl p-6 border border-blue-500 relative overflow-hidden shadow-xl hover:shadow-blue-500/30 transition-all duration-500 hover:scale-105 group sm:w-full md:w-[450px] lg:w-[500px] h-[300px] flex flex-col justify-between">
+  <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+  
+  <div class="absolute inset-0 bg-serverCard bg-cover bg-center opacity-30 transition-all duration-500 group-hover:opacity-40"></div>
+  
+  <div class="absolute inset-0 server-particles opacity-20"></div>
+  
+  <div class="relative z-10">
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="text-3xl font-bold text-white glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">{{ $t('boutique.bleachTitle') }}</h3>
+      
+      <div class="server-icon-container w-16 h-16 flex items-center justify-center bg-blue-500/10 rounded-full group-hover:bg-blue-500/20 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="text-blue-400 transform transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
+          <path fill="currentColor" d="M7.05 3.5c.99 0 1.93.35 2.67.99l.13.15c.76.64 1.81.99 2.9.99c1.28 0 2.5-.47 3.42-1.3a.756.756 0 0 1 1.06.1c.27.32.23.8-.1 1.06c-1.22 1.08-2.75 1.64-4.39 1.64c-1.39 0-2.72-.43-3.69-1.29c-.15-.17-.52-.52-1-.52c-.71 0-1.3.59-1.3 1.3c0 .73.59 1.3 1.35 1.3c.76 0 1.35-.58 1.36-1.27v-.13c0-.43.35-.8.8-.8c.43 0 .8.36.8.8v.12c-.01 1.55-1.22 2.77-2.95 2.77c-1.67 0-2.95-1.27-2.95-2.9c-.01-1.63 1.27-2.91 2.89-2.91M21 12c0 1.09-.21 2.18-.61 3.2c-.26.66-.98 1.08-1.81 1.08c-.82 0-1.54-.41-1.8-1.06c-.71-1.77-.69-3.68.01-5.43c.28-.68 1.05-.96 1.72-.7c.67.25.95.95.72 1.64c-.44 1.1-.44 2.3-.01 3.4c.07.16.16.25.35.25c.22 0 .33-.12.39-.28c.31-.8.47-1.65.47-2.5c0-3.9-3.18-7.05-7.1-7.05c-.54 0-1.1.07-1.66.2C10 4.87 9.34 4.67 8.72 4.67c-.61 0-1.21.2-1.67.57c-.33.26-.8.22-1.06-.1c-.26-.33-.21-.8.12-1.07c.76-.6 1.7-.9 2.62-.9c.85 0 1.65.25 2.34.74C11.73 3.31 12.37 3.2 13 3.2c4.76 0 8.63 3.85 8.63 8.6c0 1.09-.21 2.18-.62 3.2c-.78 1.95-2.82 3.22-5.27 3.22c-2.45 0-4.5-1.27-5.27-3.22c-.15-.37.03-.8.4-.95c.37-.15.8.03.95.4c.58 1.47 2.12 2.38 3.92 2.38c1.8 0 3.34-.9 3.92-2.38c.08-.21.17-.43.24-.64c.24-.68.91-.95 1.59-.7c.67.24.95.94.72 1.63c-.06.15-.11.3-.17.46c-1 2.53-3.61 4.03-6.29 4.03c-2.69 0-5.3-1.5-6.3-4.03C3.21 14.18 3 13.09 3 12c0-.46.04-.95.13-1.42c.43.29.93.42 1.42.42c1.37 0 2.5-.93 2.74-2.22c.75.89 1.84 1.38 3.2 1.38c1.87 0 3.65-.68 5.11-1.95c1.26 2.42 3.11 3.59 5.27 3.59c.4 0 .8.32.8.8s-.4.8-.8.8c-2.73 0-5.12-1.58-6.57-4.5c-.2.09-.48.2-.7.3c-.47.2-1 .31-1.55.31c-.7 0-1.35-.15-1.96-.46c-.37-.19-.83-.03-1.01.33c-.18.36-.04.8.33.99c.82.41 1.74.62 2.66.62c.46 0 .94-.06 1.4-.19c.13-.04.26-.09.38-.14c.73 1.58 1.92 2.7 3.44 3.43c.36.17.51.6.34.96c-.17.36-.61.52-.96.34c-1.27-.61-2.4-1.48-3.28-2.65c-1.5.6-3.18.62-4.67 0c-.36-.15-.54-.57-.4-.93c.14-.36.55-.53.91-.4c.56.23 1.29.36 2.07.36c.78 0 1.52-.13 2.09-.36z"/>
+        </svg>
+      </div>
+    </div>
+    
+    <p class="text-gray-300 mb-6 group-hover:text-gray-100 transition-colors duration-300">
+      {{ $t('boutique.bleachDescription') }}
+    </p>
+    
+    <div class="flex items-center gap-4 mb-4">
+      <div class="flex items-center gap-2">
+        <span class="h-2.5 w-2.5 bg-green-500 rounded-full pulse-green"></span>
+        <span class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">{{ $t('boutique.serverStatus') }}</span>
+      </div>
+      
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="text-blue-400">
+          <path fill="currentColor" d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7Z"/>
+        </svg>
+        <span class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">38 {{ $t('navbar.players') }}</span>
+      </div>
+    </div>  
+  </div>
+  
+  <NuxtLink :to="localePath('/boutique/bleach')" class="relative z-10 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 rounded-lg text-center font-medium transition-all duration-300 hover:shadow-blue-500/30 hover:shadow-md group-hover:scale-105 flex items-center justify-center gap-2">
+    <span>{{ $t('boutique.exploreButton') }}</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="transform transition-all duration-300 group-hover:translate-x-1">
+      <path fill="currentColor" d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6z"/>
+    </svg>
+  </NuxtLink>
+</div> -->
         </div>
       </div>
     </div>
