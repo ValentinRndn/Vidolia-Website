@@ -46,32 +46,31 @@ export default defineNuxtConfig({
     }
   },
 
-  // i18n Configuration
   i18n: {
     locales: [
       {
         code: 'fr',
         iso: 'fr-FR',
         name: 'Français',
-        file: 'fr.json' // File for French translations
+        file: 'fr.json'
       },
       {
         code: 'ru',
         iso: 'ru-RU',
         name: 'Русский',
-        file: 'ru.json' // File for Russian translations
+        file: 'ru.json'
       },
       {
         code: 'de',
         iso: 'de-DE',
         name: 'Deutsch',
-        file: 'de.json' // File for German translations
+        file: 'de.json'
       }
     ],
-    lazy: true, // Load translations on demand
-    langDir: 'locales', // Directory where translation files will be stored
-    defaultLocale: 'fr', // Set French as the default language
-    strategy: 'prefix_except_default', // URL prefixing strategy (e.g., /ru/about, /de/about, but /about for default 'fr')
-    vueI18n: './i18n.options.ts' // Optional: for more complex vue-i18n options if needed later
+    lazy: true,
+    langDir: 'i18n/locales', // Chemin modifié
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default',
+    vueI18n: './i18n/config.ts' // Chemin modifié
   }
 })

@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "welcome": "Bienvenue sur",
+    "description": "Plongez dans l'univers de Demon Slayer avec notre serveur GMod unique. Affrontez des démons, rejoignez les pourfendeurs, et vivez une expérience de RP immersive.",
+    "play": "Jouer",
+    "discord": "Discord"
+  },
+  "servers": {
+    "title1": "Serveur #1",
+    "description1": "Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.",
+    "title2": "Serveur #2",
+    "description2": "Immergez-vous dans l'univers de Demon Slayer avec notre serveur RP principal. Développez votre personnage et participez à des quêtes épiques.",
+    "online": "En ligne:"
+  },
+  "payment": {
+    "security": "Payez en toute sécurité",
+    "with": "Avec Tebex",
+    "methods": "Mastercard, Visa, Paypal et bien d'autres...",
+    "shop": "Boutique"
+  },
+  "about": {
+    "vidolia": "Vidolia",
+    "title": "Une communauté Garry's mod fondée sur le monde de Demon Slayer",
+    "description1": "Sur le serveur vous pourrez incarner un Démon comme un pourfendeur et accomplir des missions ou même faire des combats entre vous. À vous de montrer votre force et d'imposer votre supériorité dans des évènements de prise de territoires ! Mais qui sera le plus fort des mangeurs d'hommes ou des chasseurs de démons !",
+    "description2": "Notre serveur a été créé avec nos mains pour vous offrir une expérience de jeu exceptionnelle!"
+  },
+  "team": {
+    "title": "Notre équipe",
+    "founder": "Fondateur",
+    "admin": "Admin",
+    "moderator": "Modérateur",
+    "developer": "Développeur"
+  }
+}

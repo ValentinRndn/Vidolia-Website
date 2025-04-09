@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "welcome": "Willkommen bei",
+    "description": "Tauchen Sie mit unserem einzigartigen GMod-Server in die Welt von Demon Slayer ein. Kämpfen Sie gegen Dämonen, schließen Sie sich den Dämonenjägern an und erleben Sie ein immersives RP-Erlebnis.",
+    "play": "Spielen",
+    "discord": "Discord"
+  },
+  "servers": {
+    "title1": "Server #1",
+    "description1": "Tauchen Sie mit unserem Haupt-RP-Server in die Welt von Demon Slayer ein. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
+    "title2": "Server #2",
+    "description2": "Tauchen Sie mit unserem Haupt-RP-Server in die Welt von Demon Slayer ein. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
+    "online": "Online:"
+  },
+  "payment": {
+    "security": "Bezahlen Sie sicher",
+    "with": "Mit Tebex",
+    "methods": "Mastercard, Visa, Paypal und viele mehr...",
+    "shop": "Shop"
+  },
+  "about": {
+    "vidolia": "Vidolia",
+    "title": "Eine Garry's mod Gemeinschaft basierend auf der Welt von Demon Slayer",
+    "description1": "Auf dem Server können Sie sowohl einen Dämon als auch einen Dämonenjäger verkörpern und Missionen erfüllen oder sogar gegeneinander kämpfen. Zeigen Sie Ihre Stärke und behaupten Sie Ihre Überlegenheit in Gebietskampf-Events! Aber wer wird stärker sein - die Menschenfresser oder die Dämonenjäger?",
+    "description2": "Unser Server wurde mit unseren eigenen Händen erstellt, um Ihnen ein außergewöhnliches Spielerlebnis zu bieten!"
+  },
+  "team": {
+    "title": "Unser Team",
+    "founder": "Gründer",
+    "admin": "Admin",
+    "moderator": "Moderator",
+    "developer": "Entwickler"
+  }
+}

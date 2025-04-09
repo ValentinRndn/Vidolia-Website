@@ -1,14 +1,27 @@
 <template>
-  <div>
-    <!-- Default layout -->
-    <slot />
+  <div class="layout">
+    <header>
+      <nav>
+        <!-- Vos liens de navigation -->
+        <NuxtLink :to="localePath('/')">{{ $t('home') }}</NuxtLink>
+        <NuxtLink :to="localePath('/about')">{{ $t('about') }}</NuxtLink>
+        <!-- Autres liens -->
+      </nav>
+      <LanguageSwitcher />
+    </header>
+    
+    <main>
+      <slot />
+    </main>
+    
+    <footer>
+      <!-- Contenu du pied de page -->
+    </footer>
   </div>
 </template>
 
-<script setup lang="ts">
-// No script needed for a basic layout
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+const localePath = useLocalePath()
 </script>
-
-<style scoped>
-/* Add layout-specific styles if needed */
-</style>
