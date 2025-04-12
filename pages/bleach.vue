@@ -375,22 +375,37 @@
   }
   </style>
   
-  <script>
-  export default {
-    mounted() {
-      // Animation des éléments au défilement
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-          }
-        });
-      }, { threshold: 0.2 });
+  <script setup>
+  import { onMounted, onBeforeUnmount } from 'vue'
+  import { useI18n } from 'vue-i18n'
   
-      // Observer les sections avec animation
-      document.querySelectorAll('.fade-in-section').forEach(section => {
-        observer.observe(section);
-      });
+  // Ajouter cette ligne pour importer localePath
+  const localePath = useLocalePath()
+  const { t } = useI18n()
+  
+  let observer = null
+  
+  onMounted(() => {
+    // Animation des éléments au défilement
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active')
+        }
+      })
+    }, { threshold: 0.2 })
+  
+    // Observer les sections avec animation
+    document.querySelectorAll('.fade-in-section').forEach(section => {
+      observer.observe(section)
+    })
+  })
+  
+  // Important : nettoyer l'observer lors du démontage du composant
+  onBeforeUnmount(() => {
+    if (observer) {
+      observer.disconnect()
+      observer = null
     }
-  }
+  })
   </script>

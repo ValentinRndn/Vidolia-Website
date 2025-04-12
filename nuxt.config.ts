@@ -1,5 +1,6 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
+  
   app: {
     head: {
       // Vos configurations head inchangées

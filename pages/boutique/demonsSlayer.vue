@@ -407,131 +407,121 @@
 }
 </style>
 
-<script>
-import tebexService from '~/services/tebex';
-import DOMPurify from 'isomorphic-dompurify';
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+import tebexService from '~/services/tebex'
+import DOMPurify from 'isomorphic-dompurify'
 
-export default {
-  data() {
-    return {
-      packages: [],
-      loading: true,
-      loadError: false,
-      showPurchaseModal: false,
-      selectedPackage: null,
-      username: '',
-      usernameError: '',
-      processing: false,
-      processingError: '',
-    };
-  },
+// Ajouter cette ligne pour importer localePath
+const localePath = useLocalePath()
+
+// Convertir data() en refs
+const packages = ref([])
+const loading = ref(true)
+const loadError = ref(false)
+const showPurchaseModal = ref(false)
+const selectedPackage = ref(null)
+const username = ref('')
+const usernameError = ref('')
+const processing = ref(false)
+const processingError = ref('')
+
+// Convertir computed en computed refs
+const sortedPackages = computed(() => {
+  if (packages.value.length === 0) return []
   
-  computed: {
-    // Packages triés par ordre si disponible
-    sortedPackages() {
-      if (this.packages.length === 0) return [];
-      
-      // Si les packages ont une propriété 'order', trier par cet ordre
-      if ('order' in this.packages[0]) {
-        return [...this.packages].sort((a, b) => a.order - b.order);
-      }
-      
-      // Sinon, trier par prix
-      return [...this.packages].sort((a, b) => a.total_price - b.total_price);
-    }
-  },
-  
-  mounted() {
-    this.loadPackages();
-  },
-  
-  methods: {
-    // Charger les packages depuis l'API Tebex
-    async loadPackages() {
-      this.loading = true;
-      this.loadError = false;
-      
-      try {
-        // Charger les packages depuis l'API Tebex
-        const packagesData = await tebexService.getPackages();
-        
-        // S'assurer que nous avons un tableau de packages
-        if (Array.isArray(packagesData) && packagesData.length > 0) {
-          this.packages = packagesData;
-          console.log('Packages chargés avec succès:', this.packages.length);
-        } else {
-          console.error('Aucun package reçu de l\'API:', packagesData);
-          this.packages = [];
-        }
-      } catch (error) {
-        console.error('Erreur lors du chargement des packages:', error);
-        this.loadError = true;
-        this.packages = [];
-      } finally {
-        this.loading = false;
-      }
-    },
-    
-    // Sanitize HTML pour éviter les problèmes de sécurité
-    sanitizeHTML(html) {
-      return html ? DOMPurify.sanitize(html) : '';
-    },
-    
-    // Ouvrir la modal d'achat
-    openPurchaseModal(pack) {
-      this.selectedPackage = pack;
-      this.username = '';
-      this.usernameError = '';
-      this.processingError = '';
-      this.showPurchaseModal = true;
-    },
-    
-    // Traiter l'achat
-// Dans la méthode processPurchase de votre composant
-// Dans votre composant
-// Dans votre composant
-async processPurchase() {
-  // Réinitialiser les erreurs
-  this.usernameError = '';
-  this.processingError = '';
-  
-  // Valider le nom d'utilisateur
-  if (!this.username) {
-    this.usernameError = 'Veuillez entrer votre pseudo';
-    return;
+  // Si les packages ont une propriété 'order', trier par cet ordre
+  if ('order' in packages.value[0]) {
+    return [...packages.value].sort((a, b) => a.order - b.order)
   }
   
-  if (this.username.length < 3) {
-    this.usernameError = 'Le pseudo doit contenir au moins 3 caractères';
-    return;
-  }
-  
-  this.processing = true;
+  // Sinon, trier par prix
+  return [...packages.value].sort((a, b) => a.total_price - b.total_price)
+})
+
+// Convertir mounted() en onMounted()
+onMounted(() => {
+  loadPackages()
+})
+
+// Convertir les méthodes en fonctions
+async function loadPackages() {
+  loading.value = true
+  loadError.value = false
   
   try {
-    console.log('Préparation de l\'achat pour le package:', this.selectedPackage.id, 'et l\'utilisateur:', this.username);
+    // Charger les packages depuis l'API Tebex
+    const packagesData = await tebexService.getPackages()
+    
+    // S'assurer que nous avons un tableau de packages
+    if (Array.isArray(packagesData) && packagesData.length > 0) {
+      packages.value = packagesData
+      console.log('Packages chargés avec succès:', packages.value.length)
+    } else {
+      console.error('Aucun package reçu de l\'API:', packagesData)
+      packages.value = []
+    }
+  } catch (error) {
+    console.error('Erreur lors du chargement des packages:', error)
+    loadError.value = true
+    packages.value = []
+  } finally {
+    loading.value = false
+  }
+}
+
+// Sanitize HTML pour éviter les problèmes de sécurité
+function sanitizeHTML(html) {
+  return html ? DOMPurify.sanitize(html) : ''
+}
+
+// Ouvrir la modal d'achat
+function openPurchaseModal(pack) {
+  selectedPackage.value = pack
+  username.value = ''
+  usernameError.value = ''
+  processingError.value = ''
+  showPurchaseModal.value = true
+}
+
+// Traiter l'achat
+async function processPurchase() {
+  // Réinitialiser les erreurs
+  usernameError.value = ''
+  processingError.value = ''
+  
+  // Valider le nom d'utilisateur
+  if (!username.value) {
+    usernameError.value = 'Veuillez entrer votre pseudo'
+    return
+  }
+  
+  if (username.value.length < 3) {
+    usernameError.value = 'Le pseudo doit contenir au moins 3 caractères'
+    return
+  }
+  
+  processing.value = true
+  
+  try {
+    console.log('Préparation de l\'achat pour le package:', selectedPackage.value.id, 'et l\'utilisateur:', username.value)
     
     // Utiliser la méthode avec le domaine personnalisé
     const checkoutUrl = tebexService.getVidoliaCheckoutUrl(
-      this.selectedPackage.id, 
-      this.username
-    );
+      selectedPackage.value.id, 
+      username.value
+    )
     
-    console.log('URL de paiement générée:', checkoutUrl);
-    
-    // Si vous voulez voir toutes les variantes possibles pour test manuel
-    // tebexService.testAllUrlFormats(this.selectedPackage.id, this.username);
+    console.log('URL de paiement générée:', checkoutUrl)
     
     // Rediriger après un court délai
     setTimeout(() => {
-      window.location.href = checkoutUrl;
-    }, 500);
+      window.location.href = checkoutUrl
+    }, 500)
   } catch (error) {
-    console.error('Erreur lors de la préparation de l\'achat:', error);
-    this.processingError = 'Une erreur est survenue: ' + (error.message || 'Impossible de finaliser l\'achat');
-    this.processing = false;
+    console.error('Erreur lors de la préparation de l\'achat:', error)
+    processingError.value = 'Une erreur est survenue: ' + (error.message || 'Impossible de finaliser l\'achat')
+    processing.value = false
   }
 }
-  }
-};
 </script>

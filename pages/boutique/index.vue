@@ -372,38 +372,43 @@
 }
 </style>
 
-<script>
-export default {
-  mounted() {
-    // Animation des éléments au défilement
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains('fade-in-section')) {
-            entry.target.classList.add('active');
-            
-            // Animer les paragraphes après l'entrée de la section
-            const paragraphs = entry.target.querySelectorAll('.fade-in-paragraph');
-            paragraphs.forEach(paragraph => {
-              paragraph.classList.add('active');
-            });
-          }
-          
-          if (entry.target.classList.contains('fade-in-title')) {
-            entry.target.classList.add('active');
-          }
-          
-          if (entry.target.classList.contains('fade-in-paragraph')) {
-            entry.target.classList.add('active');
-          }
-        }
-      });
-    }, { threshold: 0.2 });
+<script setup>
+import { onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-    // Observer les sections avec animation
-    document.querySelectorAll('.fade-in-section, .fade-in-title, .fade-in-paragraph').forEach(section => {
-      observer.observe(section);
+// Ajouter ces lignes pour rendre localePath disponible
+const localePath = useLocalePath()
+const { t } = useI18n()
+
+onMounted(() => {
+  // Animation des éléments au défilement
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains('fade-in-section')) {
+          entry.target.classList.add('active');
+          
+          // Animer les paragraphes après l'entrée de la section
+          const paragraphs = entry.target.querySelectorAll('.fade-in-paragraph');
+          paragraphs.forEach(paragraph => {
+            paragraph.classList.add('active');
+          });
+        }
+        
+        if (entry.target.classList.contains('fade-in-title')) {
+          entry.target.classList.add('active');
+        }
+        
+        if (entry.target.classList.contains('fade-in-paragraph')) {
+          entry.target.classList.add('active');
+        }
+      }
     });
-  }
-}
-</script>
+  }, { threshold: 0.2 });
+
+  // Observer les sections avec animation
+  document.querySelectorAll('.fade-in-section, .fade-in-title, .fade-in-paragraph').forEach(section => {
+    observer.observe(section);
+  });
+})
+</script> 
