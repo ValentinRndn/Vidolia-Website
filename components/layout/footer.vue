@@ -47,10 +47,10 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/boutique" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center group">
+              <a href="https://vidolia.tebex.io/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center group">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                 {{ $t('footer.shop') }}
-              </NuxtLink>
+              </a>
             </li>
             <li>
               <NuxtLink to="/regles" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center group">

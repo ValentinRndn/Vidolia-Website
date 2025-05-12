@@ -19,9 +19,9 @@
           <NuxtLink to="/" class="px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300">
             Retour à l'accueil
           </NuxtLink>
-          <NuxtLink to="/boutique" class="px-4 py-3 bg-navy-700 hover:bg-navy-600 text-white rounded-lg transition-all duration-300">
+          <a href="https://vidolia.tebex.io/" target="_blank" rel="noopener noreferrer" class="px-4 py-3 bg-navy-700 hover:bg-navy-600 text-white rounded-lg transition-all duration-300">
             Retour à la boutique
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>

@@ -27,6 +27,11 @@ export default defineNuxtConfig({
     '~/assets/css/tailwind.css',  
   ],
   ssr: false,
+
+  routeRules: {
+    // Redirige /boutique vers le magasin Tebex externe
+    '/boutique': { redirect: { to: 'https://vidolia.tebex.io/', statusCode: 301 } }
+  },
   
   // Configuration pour les variables d'environnement
   runtimeConfig: {
