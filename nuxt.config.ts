@@ -6,13 +6,13 @@ export default defineNuxtConfig({
       // Vos configurations head inchangées
       title: 'Vidolia',
       meta: [
-        { name: 'description', content: '' },
-        { name: 'keywords', content: '' },
+        { name: 'description', content: "Vidolia | Serveur garry's mod sur le thème de Demon Slayer. " },
+        { name: 'keywords', content: "serveur, garry's mod, demon slayer" },
         { name: 'author', content: 'Vidolia' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.webp' },
-        { rel: 'apple-touch-icon', href: '/favicon.webp' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+        { rel: 'apple-touch-icon', href: '/favicon.png' },
       ],
     },
   },
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n', // Add the i18n module
+    '@nuxtjs/i18n', 
   ],
   css: [
     '~/assets/css/tailwind.css',  
