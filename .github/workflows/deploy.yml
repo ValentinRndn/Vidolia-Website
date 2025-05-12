@@ -128,4 +128,4 @@ jobs:
           echo "Réponse du redémarrage : $RESTART_RESPONSE"
           echo "Commande de redémarrage du serveur envoyée."
 
-          echo "=== Déploiement terminé avec succès ==="
+          echo "=== Déploiement terminé avec succès ===" 
