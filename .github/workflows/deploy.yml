@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +18,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '21'  # Assurez-vous que la version correspond à votre projet
+        node-version: '16'
 
     # Étape 3 : Installer les dépendances
     - name: Install dependencies
@@ -28,59 +28,46 @@ jobs:
     - name: Build the project
       run: npm run build
 
-    # Étape 5 : Vérifier et copier les fichiers buildés
-    - name: Copy built files
+    # Étape 5 : Préparer les fichiers buildés
+    - name: Prepare built files
       run: |
-        if [ ! -d ".output/public" ]; then
-          echo "Erreur : Le dossier de build '.output/public' est introuvable."
-          exit 1
-        fi
         mkdir build-output
         cp -r .output/public/* build-output/
-        echo "Les fichiers buildés ont été copiés dans 'build-output'."
+        tar -czf build-output.tar.gz -C build-output .
 
-    # Étape 6 : Déployer les fichiers vers Pterodactyl
-    - name: Deploy to Pterodactyl
+    # Étape 6 : Obtenir l'URL d'upload depuis Pterodactyl
+    - name: Get upload URL from Pterodactyl
       env:
         PTERODACTYL_PANEL_URL: ${{ secrets.PTERODACTYL_PANEL_URL }}
         PTERODACTYL_API_KEY: ${{ secrets.PTERODACTYL_API_KEY }}
         PTERODACTYL_SERVER_ID: ${{ secrets.PTERODACTYL_SERVER_ID }}
       run: |
-        echo "Récupération de l'URL d'upload depuis Pterodactyl..."
+        echo "Récupération de l'URL d'upload..."
         UPLOAD_URL_RESPONSE=$(curl -s -X GET \
           "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/files/upload" \
-          -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-          -H "Accept: application/json")
+          -H "Accept: application/json" \
+          -H "Authorization: Bearer $PTERODACTYL_API_KEY")
 
-        echo "Réponse brute de l'API : $UPLOAD_URL_RESPONSE"
+        echo "Réponse brute : $UPLOAD_URL_RESPONSE"
 
         UPLOAD_URL=$(echo "$UPLOAD_URL_RESPONSE" | grep -o '"url":"[^"]*' | grep -o '[^"]*$')
         if [ -z "$UPLOAD_URL" ]; then
-          echo "Erreur : URL d'upload non trouvée dans la réponse API."
+          echo "Erreur : Impossible d'obtenir l'URL d'upload."
           exit 1
         fi
         echo "URL d'upload obtenue : $UPLOAD_URL"
 
-        echo "Compression des fichiers buildés..."
-        tar -czf build-output.tar.gz -C build-output .
-        if [ $? -ne 0 ]; then
-          echo "Erreur : Échec de la compression des fichiers buildés."
-          exit 1
-        fi
+    # Étape 7 : Uploader les fichiers buildés
+    - name: Upload built files to Pterodactyl
+      env:
+        UPLOAD_URL: ${{ steps.get-upload-url.outputs.UPLOAD_URL }}
+      run: |
+        echo "Upload des fichiers buildés..."
+        curl -s -X POST "$UPLOAD_URL" \
+          -F "file=@build-output.tar.gz"
+        echo "Upload terminé."
 
-        echo "Déploiement des fichiers vers Pterodactyl..."
-        UPLOAD_RESPONSE=$(curl -s -X POST "$UPLOAD_URL" \
-          -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-          -F "file=@build-output.tar.gz")
-
-        echo "Réponse de l'upload : $UPLOAD_RESPONSE"
-
-        if echo "$UPLOAD_RESPONSE" | grep -q '"errors"'; then
-          echo "Erreur : Échec de l'upload des fichiers."
-          exit 1
-        fi
-
-    # Étape 7 : Redémarrer le serveur
+    # Étape 8 : Redémarrer le serveur
     - name: Restart server
       env:
         PTERODACTYL_PANEL_URL: ${{ secrets.PTERODACTYL_PANEL_URL }}
