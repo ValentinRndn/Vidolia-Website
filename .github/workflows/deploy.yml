@@ -1,4 +1,4 @@
-name: Build and Deploy to Pterodactyl
+name: Build and Deploy Nuxt 3 to Pterodactyl
 
 on:
   push:
@@ -18,13 +18,13 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '21'  
-        
+        node-version: '21'  # Assurez-vous que la version correspond à votre projet
+
     # Étape 3 : Installer les dépendances
     - name: Install dependencies
       run: npm install
 
-    # Étape 4 : Builder le projet
+    # Étape 4 : Builder le projet Nuxt
     - name: Build the project
       run: npm run build
 
@@ -32,10 +32,10 @@ jobs:
     - name: Copy built files
       run: |
         mkdir build-output
-        cp -r dist/* build-output/  # Remplacez "dist" par le dossier généré par le build
+        cp -r .output/public/* build-output/  # Copier le contenu du build Nuxt dans un dossier temporaire
         echo "Build files copied to build-output"
 
-    # Étape 6 : Déployer les fichiers vers le serveur Pterodactyl
+    # Étape 6 : Déployer les fichiers vers Pterodactyl
     - name: Deploy to Pterodactyl
       env:
         PTERODACTYL_PANEL_URL: ${{ secrets.PTERODACTYL_PANEL_URL }}
@@ -56,9 +56,10 @@ jobs:
         fi
 
         # Uploader les fichiers buildés
+        tar -czf build-output.tar.gz -C build-output .
         curl -s -X POST "$UPLOAD_URL" \
           -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-          -F "files=@build-output/release.tar.gz"
+          -F "file=@build-output.tar.gz"
 
         echo "Fichiers déployés avec succès !"
 
