@@ -28,12 +28,16 @@ jobs:
     - name: Build the project
       run: npm run build
 
-    # Étape 5 : Copier les fichiers buildés
+    # Étape 5 : Vérifier et copier les fichiers buildés
     - name: Copy built files
       run: |
+        if [ ! -d ".output/public" ]; then
+          echo "Erreur : Le dossier de build '.output/public' est introuvable."
+          exit 1
+        fi
         mkdir build-output
-        cp -r .output/public/* build-output/  # Copier le contenu du build Nuxt dans un dossier temporaire
-        echo "Build files copied to build-output"
+        cp -r .output/public/* build-output/
+        echo "Les fichiers buildés ont été copiés dans 'build-output'."
 
     # Étape 6 : Déployer les fichiers vers Pterodactyl
     - name: Deploy to Pterodactyl
@@ -42,26 +46,39 @@ jobs:
         PTERODACTYL_API_KEY: ${{ secrets.PTERODACTYL_API_KEY }}
         PTERODACTYL_SERVER_ID: ${{ secrets.PTERODACTYL_SERVER_ID }}
       run: |
-        echo "Déploiement des fichiers buildés vers Pterodactyl..."
+        echo "Récupération de l'URL d'upload depuis Pterodactyl..."
         UPLOAD_URL_RESPONSE=$(curl -s -X GET \
           "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/files/upload" \
           -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
           -H "Accept: application/json")
 
-        # Extraire l'URL d'upload
+        echo "Réponse brute de l'API : $UPLOAD_URL_RESPONSE"
+
         UPLOAD_URL=$(echo "$UPLOAD_URL_RESPONSE" | grep -o '"url":"[^"]*' | grep -o '[^"]*$')
         if [ -z "$UPLOAD_URL" ]; then
-          echo "Erreur : Impossible d'obtenir l'URL d'upload."
+          echo "Erreur : URL d'upload non trouvée dans la réponse API."
+          exit 1
+        fi
+        echo "URL d'upload obtenue : $UPLOAD_URL"
+
+        echo "Compression des fichiers buildés..."
+        tar -czf build-output.tar.gz -C build-output .
+        if [ $? -ne 0 ]; then
+          echo "Erreur : Échec de la compression des fichiers buildés."
           exit 1
         fi
 
-        # Uploader les fichiers buildés
-        tar -czf build-output.tar.gz -C build-output .
-        curl -s -X POST "$UPLOAD_URL" \
+        echo "Déploiement des fichiers vers Pterodactyl..."
+        UPLOAD_RESPONSE=$(curl -s -X POST "$UPLOAD_URL" \
           -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-          -F "file=@build-output.tar.gz"
+          -F "file=@build-output.tar.gz")
 
-        echo "Fichiers déployés avec succès !"
+        echo "Réponse de l'upload : $UPLOAD_RESPONSE"
+
+        if echo "$UPLOAD_RESPONSE" | grep -q '"errors"'; then
+          echo "Erreur : Échec de l'upload des fichiers."
+          exit 1
+        fi
 
     # Étape 7 : Redémarrer le serveur
     - name: Restart server
