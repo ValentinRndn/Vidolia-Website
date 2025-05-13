@@ -1,131 +1,78 @@
-name: Deploy to Pterodactyl
+name: Build and Deploy to Pterodactyl
 
 on:
   push:
     branches:
-      - main  # Déclenche le workflow uniquement sur la branche main
+      - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      # Étape 1 : Récupérer le code du dépôt
-      - name: Checkout code
-        uses: actions/checkout@v3
+    # Étape 1 : Récupérer le code
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      # Étape 2 : Installer Node.js
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '21' # Assurez-vous que cette version est compatible avec votre projet
-          cache: 'npm'
+    # Étape 2 : Installer Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # Assurez-vous que la version correspond à votre projet
 
-      # Étape 3 : Installer les dépendances
-      - name: Install dependencies
-        run: npm install
+    # Étape 3 : Installer les dépendances
+    - name: Install dependencies
+      run: npm install
 
-      # Étape 4 : Builder l'application Nuxt.js
-      - name: Build Nuxt application
-        run: npm run build 
+    # Étape 4 : Builder le projet
+    - name: Build the project
+      run: npm run build
 
-      # Étape 5 : Archiver les fichiers de production
-      - name: Archive production artifacts
-        run: tar -czvf release.tar.gz .output 
+    # Étape 5 : Copier les fichiers buildés
+    - name: Copy built files
+      run: |
+        mkdir build-output
+        cp -r dist/* build-output/  # Remplacez "dist" par le dossier généré par le build
+        echo "Build files copied to build-output"
 
-      # Étape 6 : Déployer sur Pterodactyl
-      - name: Deploy to Pterodactyl
-        env:
-          PTERODACTYL_PANEL_URL: ${{ secrets.PTERODACTYL_PANEL_URL }}
-          PTERODACTYL_API_KEY: ${{ secrets.PTERODACTYL_API_KEY }}
-          PTERODACTYL_SERVER_ID: ${{ secrets.PTERODACTYL_SERVER_ID }}
-        run: |
-          echo "=== Début du déploiement vers Pterodactyl ==="
+    # Étape 6 : Déployer les fichiers vers le serveur Pterodactyl
+    - name: Deploy to Pterodactyl
+      env:
+        PTERODACTYL_PANEL_URL: ${{ secrets.PTERODACTYL_PANEL_URL }}
+        PTERODACTYL_API_KEY: ${{ secrets.PTERODACTYL_API_KEY }}
+        PTERODACTYL_SERVER_ID: ${{ secrets.PTERODACTYL_SERVER_ID }}
+      run: |
+        echo "Déploiement des fichiers buildés vers Pterodactyl..."
+        UPLOAD_URL_RESPONSE=$(curl -s -X GET \
+          "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/files/upload" \
+          -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
+          -H "Accept: application/json")
 
-          # Activer le mode débogage pour afficher chaque commande
-          set -x
+        # Extraire l'URL d'upload
+        UPLOAD_URL=$(echo "$UPLOAD_URL_RESPONSE" | grep -o '"url":"[^"]*' | grep -o '[^"]*$')
+        if [ -z "$UPLOAD_URL" ]; then
+          echo "Erreur : Impossible d'obtenir l'URL d'upload."
+          exit 1
+        fi
 
-          # Vérifier que les secrets sont définis
-          if [ -z "$PTERODACTYL_PANEL_URL" ] || [ -z "$PTERODACTYL_API_KEY" ] || [ -z "$PTERODACTYL_SERVER_ID" ]; then
-            echo "Erreur : Les secrets PTERODACTYL_PANEL_URL, PTERODACTYL_API_KEY ou PTERODACTYL_SERVER_ID ne sont pas définis."
-            exit 1
-          fi
-          echo "Secrets vérifiés avec succès."
+        # Uploader les fichiers buildés
+        curl -s -X POST "$UPLOAD_URL" \
+          -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
+          -F "files=@build-output/release.tar.gz"
 
-          # Obtenir une URL d'upload sécurisée depuis l'API Pterodactyl
-          echo "Récupération de l'URL d'upload depuis l'API Pterodactyl..."
-          UPLOAD_URL_RESPONSE=$(curl -s -X GET \
-            "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/files/upload" \
-            -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-            -H "Accept: application/json")
+        echo "Fichiers déployés avec succès !"
 
-          echo "Réponse brute de l'API : $UPLOAD_URL_RESPONSE"
-
-          # Extraire l'URL d'upload de la réponse
-          UPLOAD_URL=$(echo "$UPLOAD_URL_RESPONSE" | grep -o '"url":"[^"]*' | grep -o '[^"]*$')
-          if [ -z "$UPLOAD_URL" ]; then
-            echo "Erreur : Impossible d'obtenir l'URL d'upload depuis Pterodactyl."
-            echo "Réponse de l'API : $UPLOAD_URL_RESPONSE"
-            exit 1
-          fi
-          echo "URL d'upload obtenue : $UPLOAD_URL"
-
-          # Uploader l'archive
-          echo "Upload de l'archive release.tar.gz..."
-          UPLOAD_RESPONSE=$(curl -s -X POST \
-            "$UPLOAD_URL" \
-            -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-            -F "files=@release.tar.gz")
-          echo "Réponse de l'upload : $UPLOAD_RESPONSE"
-
-          echo "Archive uploadée avec succès sur le serveur."
-
-          # Supprimer l'ancien dossier .output s'il existe
-          echo "Suppression de l'ancien dossier .output (si existant)..."
-          DELETE_RESPONSE=$(curl -s -X POST \
-            "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/files/delete" \
-            -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d '{
-                  "root": "/",
-                  "files": [".output"]
-                }')
-          echo "Réponse de la suppression : $DELETE_RESPONSE"
-          echo "Ancien dossier .output supprimé."
-
-          # Décompresser la nouvelle archive
-          echo "Décompression de l'archive release.tar.gz..."
-          DECOMPRESS_RESPONSE=$(curl -s -X POST \
-            "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/files/decompress" \
-            -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d '{
-                  "root": "/",
-                  "file": "release.tar.gz"
-                }')
-          echo "Réponse de la décompression : $DECOMPRESS_RESPONSE"
-          echo "Nouvelle archive décompressée avec succès."
-
-          # Supprimer l'archive après décompression
-          echo "Suppression de l'archive release.tar.gz..."
-          DELETE_ARCHIVE_RESPONSE=$(curl -s -X POST \
-            "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/files/delete" \
-            -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d '{
-                  "root": "/",
-                  "files": ["release.tar.gz"]
-                }')
-          echo "Réponse de la suppression de l'archive : $DELETE_ARCHIVE_RESPONSE"
-          echo "Archive release.tar.gz supprimée du serveur."
-
-          # Redémarrer le serveur
-          echo "Redémarrage du serveur..."
-          RESTART_RESPONSE=$(curl -s -X POST \
-            "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/power" \
-            -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d '{ "signal": "restart" }')
-          echo "Réponse du redémarrage : $RESTART_RESPONSE"
-          echo "Commande de redémarrage du serveur envoyée."
-
-          echo "=== Déploiement terminé avec succès ==="    
+    # Étape 7 : Redémarrer le serveur
+    - name: Restart server
+      env:
+        PTERODACTYL_PANEL_URL: ${{ secrets.PTERODACTYL_PANEL_URL }}
+        PTERODACTYL_API_KEY: ${{ secrets.PTERODACTYL_API_KEY }}
+        PTERODACTYL_SERVER_ID: ${{ secrets.PTERODACTYL_SERVER_ID }}
+      run: |
+        echo "Redémarrage du serveur..."
+        curl -X POST \
+          "$PTERODACTYL_PANEL_URL/api/client/servers/$PTERODACTYL_SERVER_ID/power" \
+          -H "Authorization: Bearer $PTERODACTYL_API_KEY" \
+          -H "Content-Type: application/json" \
+          -d '{ "signal": "restart" }'
+        echo "Serveur redémarré avec succès."
