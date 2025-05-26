@@ -27,9 +27,11 @@
   "team": {
     "title": "Unser Team",
     "founder": "Gründer",
-    "admin": "Admin",
-    "moderator": "Moderator",
-    "developer": "Entwickler"
+    "supervisor": "Aufsicht",
+    "responsable-communication": "Kommunikationsmanager",
+    "responsable-developer": "Entwicklermanager",
+    "responsable-design": "Leiter Game Designer"
+
   },
   "home": {
     "hero": {

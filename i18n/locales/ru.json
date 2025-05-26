@@ -27,9 +27,11 @@
   "team": {
     "title": "Наша команда",
     "founder": "Основатель",
-    "admin": "Администратор",
-    "moderator": "Модератор",
-    "developer": "Разработчик"
+    "supervisor": "руководитель",
+    "responsable-communication": "Менеджер по связям с общественностью",
+    "responsable-developer": "Менеджер разработчиков",
+    "responsable-design": "Руководитель отдела игрового дизайна"
+
   },
   "home": {
     "hero": {

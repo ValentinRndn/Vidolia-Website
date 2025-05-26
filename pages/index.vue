@@ -21,7 +21,7 @@
         </p>
 
         <div class="flex flex-row gap-4 button-container lg:justify-center">
-          <a class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
+          <a href="steam://connect/node01.vidolia.fr:27022"  target="_blank" class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" id="svg-play" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"/></svg>
@@ -72,10 +72,10 @@
             <div class="relative z-10">
               <h3 class="text-3xl md:text-xl font-bold text-white mb-4 glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">{{ $t('servers.title1') }}</h3>
               <p class="text-gray-400 mb-4 text-xl group-hover:text-gray-300 transition-colors duration-300">{{ $t('servers.description1') }}</p>
-              <div class="connected-players absolute right-8 items-center justify-center flex">
+              <!-- <div class="connected-players absolute right-8 items-center justify-center flex">
                 <span class="point-players pulse-green"></span>
                 <p class="text-gray-400 ml-5 group-hover:text-gray-300 transition-colors duration-300">{{ $t('servers.online') }} 123</p>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -96,10 +96,10 @@
             <div class="relative z-10">
               <h3 class="text-3xl md:text-xl font-bold text-white mb-4 glow-text-subtle group-hover:text-blue-200 transition-colors duration-300">{{ $t('servers.title2') }}</h3>
               <p class="text-gray-400 mb-4 text-xl group-hover:text-gray-300 transition-colors duration-300">{{ $t('servers.description2') }}</p>
-              <div class="connected-players absolute right-8 items-center justify-center flex">
+              <!-- <div class="connected-players absolute right-8 items-center justify-center flex">
                 <span class="point-players pulse-green"></span>
                 <p class="text-gray-400 ml-5 group-hover:text-gray-300 transition-colors duration-300">{{ $t('servers.online') }} 123</p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@
               <!-- Effet de brillance sur l'avatar -->
               <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">NekoChan</h3>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kogui</h3>
             <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
           </div>
           
@@ -190,8 +190,8 @@
             <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Zenitsu</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.admin') }}</p>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Hori</h3>
+            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
           </div>
           
           <!-- Membre 3 -->
@@ -199,8 +199,8 @@
             <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Tanjiro</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.moderator') }}</p>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kozzi</h3>
+            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
           </div>
           
           <!-- Membre 4 -->
@@ -208,8 +208,34 @@
             <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
             </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Inosuke</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.developer') }}</p>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Liam</h3>
+            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
+          </div>
+
+          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Stricky </h3>
+            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-developer') }}</p>
+          </div>
+
+          
+          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Sherzio</h3>
+            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-communication') }}</p>
+          </div>
+
+          
+          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Astrale</h3>
+            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-design') }}</p>
           </div>
         </div>
       </div>

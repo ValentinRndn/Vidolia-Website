@@ -40,12 +40,12 @@
                 {{ $t('footer.demonSlayer') }}
               </NuxtLink>
             </li>
-            <li>
+            <!-- <li>
               <NuxtLink to="/bleach" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center group">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                 {{ $t('footer.bleach') }}
               </NuxtLink>
-            </li>
+            </li> -->
             <li>
               <a href="https://vidolia.tebex.io/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center group">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>

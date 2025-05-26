@@ -17,7 +17,7 @@
         <p class="text-gray-300 max-w-2xl text-center text-xl mt-4">{{ $t('home.hero.subtitle') }}</p>
         
         <div class="flex gap-6 mt-8">
-          <a href="#" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30">
+          <a href="steam://connect/node01.vidolia.fr:27022" target="_blank" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
               <path fill="currentColor" d="M7 6v12l10-6z"/>
             </svg>
@@ -223,7 +223,7 @@
         <p class="text-gray-300 mb-8 max-w-2xl">{{ $t('home.cta.subtitle') }}</p>
         
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 text-lg font-medium">
+          <a href="steam://connect/node01.vidolia.fr:27022" target="_blank" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 text-lg font-medium">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
               <path fill="currentColor" d="M7 6v12l10-6z"/>
             </svg>
