@@ -163,83 +163,85 @@
       </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="py-24 bg-server-card relative md:pb-24">
-      <!-- Particules d'arrière-plan -->
-      <div class="team-particles absolute inset-0 z-0 opacity-20"></div>
+<!-- Team Section -->
+<section class="py-24 bg-server-card relative md:pb-24">
+  <!-- Particules d'arrière-plan -->
+  <div class="team-particles absolute inset-0 z-0 opacity-20"></div>
+  
+  <div class="max-w-[80%] sm:max-w-[95%] mx-auto relative z-10 ">
+    <h2 class="text-white uppercase text-5xl md:text-3xl font-bold mb-24 text-center glow-text fade-in-title">
+      {{ $t('team.title') }}
+      <span class="block w-48 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mx-auto mt-4 animate-width"></span>
+    </h2>
+    
+    <div class="grid md:grid-cols-2 grid-cols-4 gap-8 fade-in-section">
       
-      <div class="max-w-[80%] sm:max-w-[95%] mx-auto relative z-10">
-        <h2 class="text-white uppercase text-5xl md:text-3xl font-bold mb-24 text-center glow-text fade-in-title">
-          {{ $t('team.title') }}
-          <span class="block w-48 h-1 bg-gradient-to-r from-blue-500 to-blue-800 mx-auto mt-4 animate-width"></span>
-        </h2>
-        
-        <div class="grid md:grid-cols-2 grid-cols-4 gap-8 fade-in-section">
-          <!-- Membre 1 -->
-          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-              <!-- Effet de brillance sur l'avatar -->
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kogui</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
-          </div>
-          
-          <!-- Membre 2 -->
-          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Hori</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
-          </div>
-          
-          <!-- Membre 3 -->
-          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kozzi</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
-          </div>
-          
-          <!-- Membre 4 -->
-          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Liam</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
-          </div>
-
-          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Stricky </h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-developer') }}</p>
-          </div>
-
-          
-          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Sherzio</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-communication') }}</p>
-          </div>
-
-          
-          <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-            <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/30 to-blue-500/0 avatar-shine"></div>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Astrale</h3>
-            <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-design') }}</p>
-          </div>
+      <!-- Membre 1 -->
+      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+          <img src="../assets/images/staff/kogui.webp" alt="Kogui" class="w-full h-full object-cover rounded-full">
         </div>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kogui</h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
       </div>
-    </section>
+      
+      <!-- Membre 2 -->
+      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+          <img src="../assets/images/staff/hori.jpg" alt="Hori" class="w-full h-full object-cover rounded-full">
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Hori</h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
+      </div>
+      
+      <!-- Membre 3 -->
+      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+          <img src="../assets/images/staff/kozzi.jpg" alt="Kozzi" class="w-full h-full object-cover rounded-full">
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kozzi</h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
+      </div>
+      
+      <!-- Membre 4 -->
+      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+          <img src="../assets/images/staff/liam.jpg" alt="Liam" class="w-full h-full object-cover rounded-full">
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Liam</h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
+      </div>
+
+      <!-- Membre 5 -->
+      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+          <img src="../assets/images/staff/stricky.jpg" alt="Stricky" class="w-full h-full object-cover rounded-full">
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Stricky</h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-developer') }}</p>
+      </div>
+
+      <!-- Membre 6 -->
+      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+          <img src="../assets/images/staff/sherzio.webp" alt="Sherzio" class="w-full h-full object-cover rounded-full">
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Sherzio</h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-communication') }}</p>
+      </div>
+
+      <!-- Membre 7 -->
+      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
+          <img src="../assets/images/staff/astrale.jpg" alt="Astrale" class="w-full h-full object-cover rounded-full">
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Astrale</h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-design') }}</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
   </div>
 </template>
 
