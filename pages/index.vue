@@ -179,7 +179,7 @@
       <!-- Membre 1 -->
       <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
         <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/kogui.webp" alt="Kogui" class="w-full h-full object-cover rounded-full">
+          <img src="../assets/images/staff/kozzi.jpg" alt="Kogui" class="w-full h-full object-cover rounded-full">
         </div>
         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kogui</h3>
         <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
@@ -197,7 +197,7 @@
       <!-- Membre 3 -->
       <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
         <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/kozzi.jpg" alt="Kozzi" class="w-full h-full object-cover rounded-full">
+          <img src="../assets/images/staff/gyomei.webp" alt="Kozzi" class="w-full h-full object-cover rounded-full">
         </div>
         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kozzi</h3>
         <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
@@ -206,7 +206,7 @@
       <!-- Membre 4 -->
       <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
         <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/liam.jpg" alt="Liam" class="w-full h-full object-cover rounded-full">
+          <img src="../assets/images/staff/akaza.webp" alt="Liam" class="w-full h-full object-cover rounded-full">
         </div>
         <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Liam</h3>
         <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>

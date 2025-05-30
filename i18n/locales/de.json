@@ -1,15 +1,15 @@
 {
   "hero": {
     "welcome": "Willkommen bei",
-    "description": "Tauchen Sie ein in die Welt von Demon Slayer mit unserem einzigartigen GMod-Server. Kämpfen Sie gegen Dämonen, schließen Sie sich den Dämonentötern an und erleben Sie ein immersives RP-Erlebnis.",
+    "description": "Tauch ein in die Welt von Demon Slayer mit unserem einzigartigen GMod-Server. Kämpfe gegen Dämonen, schließe dich den Demon Slayern an und erlebe ein immersives RP-Erlebnis.",
     "play": "Spielen",
     "discord": "Discord"
   },
   "servers": {
     "title1": "Server #1",
-    "description1": "Tauchen Sie ein in die Welt von Demon Slayer mit unserem Haupt-RP-Server. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
+    "description1": "Tauch ein in die Welt von Demon Slayer mit unserem Haupt-RP-Server. Entwickle deinen Charakter und nimm an epischen Quests teil.",
     "title2": "Server #2",
-    "description2": "Tauchen Sie ein in die Welt von Demon Slayer mit unserem Haupt-RP-Server. Entwickeln Sie Ihren Charakter und nehmen Sie an epischen Quests teil.",
+    "description2": "Tauch ein in die Welt von Demon Slayer mit unserem Haupt-RP-Server. Entwickle deinen Charakter und nimm an epischen Quests teil.",
     "online": "Online:"
   },
   "payment": {
@@ -21,8 +21,8 @@
   "about": {
     "vidolia": "Vidolia",
     "title": "Eine Garry's mod-Gemeinschaft, die auf der Welt von Demon Slayer basiert",
-    "description1": "Auf dem Server können Sie einen Dämon oder einen Dämonentöter verkörpern und Missionen erfüllen oder sogar gegeneinander kämpfen. Zeigen Sie Ihre Stärke und setzen Sie Ihre Überlegenheit bei Gebietsereignissen durch! Aber wer wird stärker sein - die Menschenfresser oder die Dämonenjäger!",
-    "description2": "Unser Server wurde von uns erstellt, um Ihnen ein außergewöhnliches Spielerlebnis zu bieten!"
+    "description1": "Auf dem Server kannst du einen Dämon oder einen Demon Slayer verkörpern und Missionen erfüllen oder sogar gegeneinander kämpfen. Zeig deine Stärke und setze deine Überlegenheit bei Events durch! Aber wer wird stärker sein, die Menschenfresser oder die Dämonenjäger?",
+    "description2": "Unser Server wurde von uns komplett eigenständig entwickelt, mit einzigartigen Inhalten und viel Liebe zum Detail, um dir ein wirklich einzigartiges Spielerlebnis zu bieten."
   },
   "team": {
     "title": "Unser Team",
@@ -36,28 +36,28 @@
   "home": {
     "hero": {
       "title": "Demon Slayer RP",
-      "subtitle": "Schließen Sie sich dem Kampf zwischen den Dämonentötern und Muzans dämonischen Kräften an. Entwickeln Sie Ihre Atemtechniken und schmieden Sie Ihre eigene Legende.",
+      "subtitle": "Schließ dich dem Kampf zwischen den Demon Slayern und Muzans dämonischen Kräften an. Entwickle deine Atemtechniken und schmiede deine eigene Legende.",
       "play": "Jetzt spielen",
       "wiki": "Wiki"
     },
     "welcome": {
       "title": "Willkommen bei Vidolia Demon Slayer",
-      "paragraph1": "Unser Demon Slayer RP-Server taucht Sie in ein immersives Universum ein, das von Koyoharu Gotouges Werk inspiriert ist. Wählen Sie Ihre Seite zwischen Dämonentötern und Dämonen, entwickeln Sie Ihre Fähigkeiten und nehmen Sie an epischen Quests teil.",
-      "paragraph2": "Als Dämonentöter beherrschen Sie verschiedene Atemtechniken und kämpfen zum Schutz der Menschheit. Als Dämon entwickeln Sie Ihre dämonischen Künste und dienen Muzan Kibutsuji bei seinem Streben nach absoluter Macht.",
-      "paragraph3": "Unser Moderationsteam ist anwesend, um Ihnen ein qualitativ hochwertiges RP-Erlebnis zu bieten, mit regelmäßigen Events und einem sich ständig weiterentwickelnden Universum.",
+      "paragraph1": "Unser Demon Slayer RP-Server taucht dich in ein immersives Universum ein, das von Koyoharu Gotouges Werk inspiriert ist. Wähle deine Seite zwischen Demon Slayern und Dämonen, entwickle deine Fähigkeiten und nimm an epischen Quests teil.",
+      "paragraph2": "Als Demon Slayer beherrschst du verschiedene Atemtechniken und kämpfst zum Schutz der Menschheit. Als Dämon entwickelst du deine dämonischen Künste und dienst Muzan Kibutsuji bei seinem Streben nach absoluter Macht.",
+      "paragraph3": "Unser Moderationsteam ist immer anwesend, um dir ein qualitativ hochwertiges RP Erlebnis zu bieten, mit regelmäßigen Events und einem sich ständig weiterentwickelnden Universum.",
       "explore": "Eine Welt zum Erkunden",
-      "exploreDesc": "Entdecken Sie ikonische Orte und schmieden Sie Ihren eigenen Weg in diesem erbarmungslosen Universum."
+      "exploreDesc": "Entdecke ikonische Orte und schmiede deinen eigenen Weg in diesem erbarmungslosen Universum."
     },
     "resources": {
       "title": "Wichtige Ressourcen",
-      "subtitle": "Alles, was Sie brauchen, um Ihr Abenteuer zu beginnen oder Ihr Wissen über das Universum zu vertiefen.",
+      "subtitle": "Alles, was du brauchst, um dein Abenteuer zu beginnen oder dein Wissen über das Universum zu vertiefen.",
       "rules": "Regeln",
       "general": "Allgemeine Regeln",
-      "generalDesc": "Die globalen Regeln, die auf dem Server zu beachten sind",
-      "demons": "Dämonenregeln",
-      "demonsDesc": "Spezifische Regeln für das Spielen eines Dämons",
-      "slayers": "Dämonentöter-Regeln",
-      "slayersDesc": "Spezifische Regeln für Dämonentöter"
+      "generalDesc": "Die Allgemeinen Regeln, die auf dem Server zu beachten sind",
+      "demons": "Dämonen Regelwerk",
+      "demonsDesc": "Hier befindet sich das Regelwerk der Dämonen.",
+      "slayers": "Demon Slayer Regelwerk",
+      "slayersDesc": "Hier befindet sich das Regelwerk der Demon Slayer."
     },
     "wiki": {
       "title": "Demon Slayer Wiki",
@@ -67,11 +67,11 @@
       "feature2": "Atemtechniken",
       "feature3": "Dämonische Künste",
       "feature4": "FAQ & RP-Leitfaden",
-      "consult": "Wiki konsultieren"
+      "consult": "Wiki einsehen"
     },
     "cta": {
       "title": "Bereit, dem Abenteuer beizutreten?",
-      "subtitle": "Die Welt braucht Helden, um gegen dämonische Kräfte zu kämpfen. Werden Sie ein legendärer Dämonentöter oder ein mächtiger Dämon und schreiben Sie Ihre eigene Geschichte.",
+      "subtitle": "Die Welt braucht Helden, um gegen dämonische Kräfte zu kämpfen. Wirst du ein legendärer Demon Slayer oder ein mächtiger Dämon und schreibst deine eigene Geschichte?",
       "start": "Abenteuer beginnen",
       "discord": "Discord beitreten"
     }
@@ -125,10 +125,10 @@
       "playButton": "Spielen",
       "discordButton": "Discord",
       "welcomeTitle": "Willkommen in unserem Shop",
-      "welcomeText": "Unser Shop bietet Ihnen eine Auswahl an exklusiven Artikeln, um Ihr Spielerlebnis zu verbessern. Alle Ihre Einkäufe tragen zur Entwicklung des Servers bei und ermöglichen es uns, ein qualitativ hochwertiges Erlebnis zu bieten.",
-      "chooseServerTitle": "Wählen Sie Ihren Server",
+      "welcomeText": "Unser Shop bietet dir eine Auswahl an exklusiven Artikeln, um dein Spielerlebnis zu verbessern. Alle deine Einkäufe tragen zur Entwicklung des Servers bei und ermöglichen es uns, ein qualitativ hochwertiges Erlebnis zu bieten.",
+      "chooseServerTitle": "Wähle deinen Server.",
       "demonSlayerTitle": "Demon Slayer",
-      "demonSlayerDescription": "Werden Sie ein mächtiger Dämonentöter und kämpfen Sie gegen Dämonen. Meistern Sie Atemtechniken und entwickeln Sie Ihren eigenen Stil.",
+      "demonSlayerDescription": "Werde ein mächtiger Demon Slayer und kämpfe gegen Dämonen. Meistern deine Atemtechniken und entwickle deinen eigenen Stil.",
       "serverStatus": "Server aktiv",
       "exploreButton": "Shop erkunden",
       "bleachTitle": "Bleach",
