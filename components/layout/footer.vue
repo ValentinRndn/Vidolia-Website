@@ -112,14 +112,14 @@
         
         <div class="flex flex-wrap gap-4 text-sm text-gray-400">
           <NuxtLink to="/mentions-legales" class="hover:text-blue-400 transition-colors duration-300">{{ $t('footer.legalNotice') }}</NuxtLink>
-          <NuxtLink to="/politique-de-confidentialite" class="hover:text-blue-400 transition-colors duration-300">{{ $t('footer.privacyPolicy') }}</NuxtLink>
-          <NuxtLink to="/cgu" class="hover:text-blue-400 transition-colors duration-300">{{ $t('footer.termsOfService') }}</NuxtLink>
-          <NuxtLink to="/contact" class="hover:text-blue-400 transition-colors duration-300">{{ $t('footer.contact') }}</NuxtLink>
+          <!-- <NuxtLink to="/politique-de-confidentialite" class="hover:text-blue-400 transition-colors duration-300">{{ $t('footer.privacyPolicy') }}</NuxtLink> -->
+          <!-- <NuxtLink to="/cgu" class="hover:text-blue-400 transition-colors duration-300">{{ $t('footer.termsOfService') }}</NuxtLink> -->
+          <!-- <NuxtLink to="/contact" class="hover:text-blue-400 transition-colors duration-300">{{ $t('footer.contact') }}</NuxtLink> -->
         </div>
       </div>
     </div>
   </footer>
-</template> 
+</template>
 <style>
 /* Pulse animation for server status */
 .pulse-green {
