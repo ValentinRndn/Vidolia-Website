@@ -1,53 +1,69 @@
-// nuxt.config.ts
 export default defineNuxtConfig({
-  
   app: {
     head: {
-      // Vos configurations head inchangées
-      title: 'Vidolia',
+      title: 'Vidolia | Serveur Garry\'s Mod Demon Slayer',
+      htmlAttrs: {
+        lang: 'fr'
+      },
       meta: [
-        { name: 'description', content: "Vidolia | Serveur garry's mod sur le thème de Demon Slayer. " },
-        { name: 'keywords', content: "serveur, garry's mod, demon slayer" },
+        // SEO classiques
+        { name: 'description', content: "Vidolia | Serveur Garry's Mod sur le thème de Demon Slayer. Wiki, boutique d'items, communauté active et événements réguliers !" },
+        { name: 'keywords', content: "serveur Garry's Mod Demon Slayer, GMod manga, serveur RP Demon Slayer, Vidolia, boutique Garry's Mod, wiki Demon Slayer, guide Garry's Mod Demon Slayer, mods Demon Slayer Garry's Mod" },
         { name: 'author', content: 'Vidolia' },
+        { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+
+
+        
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: "Vidolia | Serveur Garry's Mod Demon Slayer" },
+        { property: 'og:description', content: "Rejoins le serveur Garry's Mod Demon Slayer Vidolia : boutique d'items, wiki, communauté dynamique et événements exclusifs." },
+        { property: 'og:url', content: 'https://vidolia.fr/' },
+        { property: 'og:site_name', content: 'Vidolia' },
+        { property: 'og:image', content: 'https://vidolia.fr/favicon.png' }, 
+
+        // Twitter
+        { name: 'twitter:card', content: 'summary_large_image' },
+        // { name: 'twitter:site', content: '@VidoliaGMod' }, 
+        { name: 'twitter:title', content: "Vidolia | Serveur Garry's Mod Demon Slayer" },
+        { name: 'twitter:description', content: "Serveur Garry's Mod inspiré de Demon Slayer : wiki, boutique, communauté et événements." },
+        { name: 'twitter:image', content: 'https://vidolia.fr/favicon.png' }, 
+        // { name: 'twitter:creator', content: '@VidoliaGMod' }, 
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
         { rel: 'apple-touch-icon', href: '/favicon.png' },
-      ],
-    },
+        { rel: 'canonical', href: 'https://vidolia.fr/' }
+      ]
+    }
   },
+
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n', 
+    '@nuxtjs/i18n',
   ],
   css: [
-    '~/assets/css/tailwind.css',  
+    '~/assets/css/tailwind.css',
   ],
   ssr: false,
 
   routeRules: {
-    // Redirige /boutique vers le magasin Tebex externe
     '/boutique': { redirect: { to: 'https://vidolia.tebex.io/', statusCode: 301 } }
   },
-  
-  // Configuration pour les variables d'environnement
+
   runtimeConfig: {
-    // Pour les applications client-only, toutes les variables doivent être dans "public"
     public: {
       tebexApiKey: process.env.NUXT_PUBLIC_TEBEX_API_KEY,
       tebexStoreDomain: process.env.NUXT_PUBLIC_TEBEX_STORE_DOMAIN || 'vidolia.tebex.io',
     }
   },
 
-  // Explicitly configure Vite settings
   vite: {
     server: {
       fs: {
-        // Allow serving files from the project root directory
-        allow: ['.'] 
+        allow: ['.']
       }
     }
   },
@@ -77,8 +93,6 @@ export default defineNuxtConfig({
     langDir: 'locales',
     defaultLocale: 'fr',
     strategy: 'prefix_except_default',
-    
-    // Ajoutez cette configuration pour résoudre le problème
     bundle: {
       optimizeTranslationDirective: false
     }
