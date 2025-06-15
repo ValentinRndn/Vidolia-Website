@@ -30,8 +30,69 @@
     "supervisor": "руководитель",
     "responsable-communication": "Менеджер по связям с общественностью",
     "responsable-developer": "Менеджер разработчиков",
-    "responsable-design": "Руководитель отдела игрового дизайна"
-
+    "responsable-design": "Руководитель отдела игрового дизайна",
+    "members": [
+      {
+        "id": "kogui",
+        "name": "Kogui",
+        "image": "/images/staff_fr/kogui.webp",
+        "role": "founder"
+      },
+      {
+        "id": "hori",
+        "name": "Hori",
+        "image": "/images/staff_fr/hori.jpg",
+        "role": "founder"
+      },
+      {
+        "id": "kozzi",
+        "name": "Elektrik",
+        "image": "/images/staff_ru/Elektrik.webp",
+        "role": "supervisor"
+      },
+      {
+        "id": "liam",
+        "name": "Isamu",
+        "image": "/images/staff_ru/Isamu.webp",
+        "role": "supervisor"
+      },
+      {
+        "id": "stricky",
+        "name": "Jessik",
+        "image": "/images/staff_ru/Jessik.webp",
+        "role": "responsable-developer"
+      },
+      {
+        "id": "sherzio",
+        "name": "Joress",
+        "image": "/images/staff_ru/Joress.webp",
+        "role": "responsable-communication"
+      },
+      {
+        "id": "astrale",
+        "name": "Kendrick",
+        "image": "/images/staff_ru/Kendrick.webp",
+        "role": "responsable-design"
+      },
+      {
+        "id": "astrale",
+        "name": "Koil",
+        "image": "/images/staff_ru/Koil.webp",
+        "role": "responsable-design"
+      },
+      {
+        "id": "astrale",
+        "name": "Nestell",
+        "image": "/images/staff_ru/NeStell.webp",
+        "role": "responsable-design"
+      },
+      {
+        "id": "astrale",
+        "name": "Tora",
+        "image": "/images/staff_ru/Tora.webp",
+        "role": "responsable-design"
+      }
+    ]
   },
   "home": {
     "hero": {
@@ -144,6 +205,14 @@
         "players": "игроков",
         "shop": "Магазин",
         "login": "Вход"
+    },
+    "links": {
+      "play": "steam://connect/node01.vidolia.fr:27022",
+      "discord": "https://discord.gg/vidoliads",
+      "wiki": "https://wiki.vidolia.fr/ru",
+      "shop": "https://boutique.vidolia.fr/ru",
+      "demonSlayerWiki": "https://wiki.vidolia.fr/ru/demon-slayer",
+      "bleachWiki": "https://wiki.vidolia.fr/ru/bleach"
     },
     "footer": {
   "description": "Иммерсивное ролевое сообщество, где творчество и воображение оживают через увлекательные вселенные.",

@@ -21,7 +21,7 @@
         </p>
 
         <div class="flex flex-row gap-4 button-container lg:justify-center">
-          <a href="steam://connect/node01.vidolia.fr:27022"  target="_blank" class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
+          <a :href="$t('links.play')"  target="_blank" class="flex items-center cursor-pointer gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-blue-500/20">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" id="svg-play" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8 17.175V6.825q0-.425.3-.713t.7-.287q.125 0 .263.037t.262.113l8.15 5.175q.225.15.338.375t.112.475t-.112.475t-.338.375l-8.15 5.175q-.125.075-.262.113T9 18.175q-.4 0-.7-.288t-.3-.712"/></svg>
@@ -30,7 +30,7 @@
             <span>{{ $t('hero.play') }}</span>
           </a>
 
-          <a class="bg-navy-800" href="https://discord.gg/vidoliads" target="_blank">
+          <a class="bg-navy-800" :href="$t('links.discord')" target="_blank">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" id="svg-discord" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
@@ -117,7 +117,7 @@
         <div class="title-container flex flex-col z-20 fade-in-section">
           <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800 uppercase text-5xl md:text-3xl font-bold animate-gradient md:text-center">{{ $t('payment.security') }}<br>{{ $t('payment.with') }}</h2>
           <p class="text-gray-400 mt-2 text-xl md:text-center">{{ $t('payment.methods') }}</p>
-          <a class="bg-gradient-to-r from-blue-500 to-blue-800 w-fit mt-4 md:mx-auto md:mb-8" :href="localePath('/boutique')">
+          <a class="bg-gradient-to-r from-blue-500 to-blue-800 w-fit mt-4 md:mx-auto md:mb-8" :href="$t('links.shop')" target="_blank">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" id="svg-boutique" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 20v-2h14v2zm0-3.5L3.725 8.475q-.05 0-.113.013T3.5 8.5q-.625 0-1.062-.438T2 7t.438-1.062T3.5 5.5t1.063.438T5 7q0 .175-.038.325t-.087.275L8 9l3.125-4.275q-.275-.2-.45-.525t-.175-.7q0-.625.438-1.063T12 2t1.063.438T13.5 3.5q0 .375-.175.7t-.45.525L16 9l3.125-1.4q-.05-.125-.088-.275T19 7q0-.625.438-1.063T20.5 5.5t1.063.438T22 7t-.437 1.063T20.5 8.5q-.05 0-.112-.012t-.113-.013L19 16.5zm1.7-2h10.6l.65-4.175l-2.625 1.15L12 6.9l-3.325 4.575l-2.625-1.15zm5.3 0"/></svg>
@@ -175,70 +175,21 @@
     </h2>
     
     <div class="grid md:grid-cols-2 grid-cols-4 gap-8 fade-in-section">
-      
-      <!-- Membre 1 -->
-      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
+      <div
+        v-for="member in teamMembers"
+        :key="member.id"
+        class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group"
+      >
         <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/kozzi.jpg" alt="Kogui" class="w-full h-full object-cover rounded-full">
+          <img :src="member.image" :alt="member.name" class="w-full h-full object-cover rounded-full">
         </div>
-        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kogui</h3>
-        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
+        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">
+          {{ member.name }}
+        </h3>
+        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+          {{ getTeamRole(member.role) }}
+        </p>
       </div>
-      
-      <!-- Membre 2 -->
-      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/hori.jpg" alt="Hori" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Hori</h3>
-        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.founder') }}</p>
-      </div>
-      
-      <!-- Membre 3 -->
-      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/gyomei.webp" alt="Kozzi" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Kozzi</h3>
-        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
-      </div>
-      
-      <!-- Membre 4 -->
-      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/akaza.webp" alt="Liam" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Liam</h3>
-        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.supervisor') }}</p>
-      </div>
-
-      <!-- Membre 5 -->
-      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/stricky.jpg" alt="Stricky" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Stricky</h3>
-        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-developer') }}</p>
-      </div>
-
-      <!-- Membre 6 -->
-      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/sherzio.webp" alt="Sherzio" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Sherzio</h3>
-        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-communication') }}</p>
-      </div>
-
-      <!-- Membre 7 -->
-      <div class="team-card p-6 rounded-lg bg-navy-900 text-center border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 hover:border-blue-400 group">
-        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-blue-500/20 overflow-hidden relative">
-          <img src="../assets/images/staff/astrale.jpg" alt="Astrale" class="w-full h-full object-cover rounded-full">
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">Astrale</h3>
-        <p class="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">{{ $t('team.responsable-design') }}</p>
-      </div>
-      
     </div>
   </div>
 </section>
@@ -694,6 +645,10 @@ a:hover {
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { onMounted } from 'vue'
+import frMessages from '~/locales/fr.json'
+import deMessages from '~/locales/de.json'
+import ruMessages from '~/locales/ru.json'
+import trMessages from '~/locales/tr.json'
 
 // Ajouter cette ligne pour importer localePath
 const localePath = useLocalePath()
@@ -711,6 +666,25 @@ useHead({
     { property: 'og:locale', content: locale.value }
   ]
 })
+
+const messages = {
+  fr: frMessages,
+  de: deMessages,
+  ru: ruMessages,
+  tr: trMessages
+}
+
+const teamMembers = computed(() => {
+  return messages[locale.value]?.team?.members || []
+})
+
+const getTeamRole = (role) => {
+  return messages[locale.value]?.team?.[role] || role
+}
+
+const getLink = (linkKey) => {
+  return messages[locale.value]?.links?.[linkKey] || '#'
+}
 
 onMounted(() => {
   // Animation des éléments au défilement

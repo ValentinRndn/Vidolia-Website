@@ -73,24 +73,25 @@ export default defineNuxtConfig({
       {
         code: 'fr',
         iso: 'fr-FR',
-        name: 'Français',
-        file: 'fr.json'
+        name: 'Français'
       },
       {
         code: 'ru',
         iso: 'ru-RU',
-        name: 'Русский',
-        file: 'ru.json'
+        name: 'Русский'
       },
       {
         code: 'de',
         iso: 'de-DE',
-        name: 'Deutsch',
-        file: 'de.json'
+        name: 'Deutsch'
+      },
+      {
+        code: 'tr',
+        iso: 'tr-TR',
+        name: 'Türkçe'
       }
     ],
-    lazy: true,
-    langDir: 'locales',
+    lazy: false,
     defaultLocale: 'fr',
     strategy: 'prefix_except_default',
     bundle: {

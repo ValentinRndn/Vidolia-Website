@@ -26,12 +26,61 @@
   },
   "team": {
     "title": "Unser Team",
-    "founder": "Gründer",
+    "founder": "Owner",
     "supervisor": "Aufsicht",
     "responsable-communication": "Kommunikationsmanager",
     "responsable-developer": "Entwicklermanager",
-    "responsable-design": "Leiter Game Designer"
-
+    "responsable-design": "Leiter Game Designer",
+    "members": [
+      {
+        "id": "kogui",
+        "name": "Kogui",
+        "image": "/images/staff_de/kozzi.jpg",
+        "role": "founder"
+      },
+      {
+        "id": "hori",
+        "name": "Hori",
+        "image": "/images/staff_de/hori.jpg",
+        "role": "founder"
+      },
+      {
+        "id": "kozzi",
+        "name": "Kouzo",
+        "image": "/images/staff_de/gyomei.webp",
+        "role": "supervisor"
+      },
+      {
+        "id": "liam",
+        "name": "Sader",
+        "image": "/images/staff_de/muzan.webp",
+        "role": "supervisor"
+      },
+      {
+        "id": "stricky",
+        "name": "Monsterplayz",
+        "image": "/images/staff_de/sherzio.webp",
+        "role": "responsable-developer"
+      },
+      {
+        "id": "sherzio",
+        "name": "Missing",
+        "image": "/images/staff_de/missing.png",
+        "role": "responsable-communication"
+      },
+      {
+        "id": "astrale",
+        "name": "Missing",
+        "image": "/images/staff_de/missing.png",
+        "role": "responsable-design"
+      },
+      {
+        "id": "AkechiZer0",
+        "name": "AkechiZer0",
+        "image": "/images/staff_de/AkechiZer0.png",
+        "role": "responsable-design"
+      }
+    ]
   },
   "home": {
     "hero": {
@@ -134,16 +183,24 @@
       "bleachTitle": "Bleach",
       "bleachDescription": "Werden Sie ein mächtiger Shinigami und kämpfen Sie gegen Hollows. Meistern Sie Ihr Zanpakutō, entwickeln Sie Ihr Bankai und beschützen Sie die Soul Society."
     },
-      "navbar": {
-        "brand": "Vidolia",
-        "lang": "Sprache",
-        "servers": "Server",
-        "demonSlayer": "Demon Slayer",
-        "bleach": "Bleach",
-        "players": "Spieler",
-        "shop": "Shop",
-        "login": "Anmelden"
-      },
+          "navbar": {
+      "brand": "Vidolia",
+      "lang": "Sprache",
+      "servers": "Server",
+      "demonSlayer": "Demon Slayer",
+      "bleach": "Bleach",
+      "players": "Spieler",
+      "shop": "Shop",
+      "login": "Anmelden"
+  },
+  "links": {
+    "play": "steam://connect/node01.vidolia.fr:27022",
+    "discord": "https://discord.gg/vidoliads",
+    "wiki": "https://wiki.vidolia.fr/de",
+    "shop": "https://boutique.vidolia.fr/de",
+    "demonSlayerWiki": "https://wiki.vidolia.fr/de/demon-slayer",
+    "bleachWiki": "https://wiki.vidolia.fr/de/bleach"
+  },
       "footer": {
   "description": "Eine immersive Rollenspiel-Community, in der Kreativität und Fantasie durch faszinierende Universen zum Leben erweckt werden.",
   "navigation": "Navigation",

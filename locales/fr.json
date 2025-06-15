@@ -30,7 +30,51 @@
     "supervisor": "Superviseur",
     "responsable-communication": "Responsable Communication",
     "responsable-developer": "Responsable développeur",
-    "responsable-design": "Responsable Game Designer"
+    "responsable-design": "Responsable Game Designer",
+    "members": [
+      {
+        "id": "kogui",
+        "name": "Kogui",
+        "image": "/images/staff_fr/kogui.webp",
+        "role": "founder"
+      },
+      {
+        "id": "hori",
+        "name": "Hori",
+        "image": "/images/staff_fr/hori.jpg",
+        "role": "founder"
+      },
+      {
+        "id": "kozzi",
+        "name": "Kozzi",
+        "image": "/images/staff_fr/gyomei.webp",
+        "role": "supervisor"
+      },
+      {
+        "id": "liam",
+        "name": "Liam",
+        "image": "/images/staff_fr/akaza.webp",
+        "role": "supervisor"
+      },
+      {
+        "id": "stricky",
+        "name": "Stricky",
+        "image": "/images/staff_fr/stricky.jpg",
+        "role": "responsable-developer"
+      },
+      {
+        "id": "sherzio",
+        "name": "Sherzio",
+        "image": "/images/staff_fr/sherzio.webp",
+        "role": "responsable-communication"
+      },
+      {
+        "id": "astrale",
+        "name": "Astrale",
+        "image": "/images/staff_fr/astrale.jpg",
+        "role": "responsable-design"
+      }
+    ]
   },
   "home": {
     "hero": {
@@ -143,6 +187,14 @@
       "players": "joueurs",
       "shop": "Boutique",
       "login": "Connexion"
+  },
+  "links": {
+    "play": "steam://connect/node01.vidolia.fr:27022",
+    "discord": "https://discord.gg/vidoliads",
+    "wiki": "https://wiki.vidolia.fr/fr",
+    "shop": "https://boutique.vidolia.fr/fr",
+    "demonSlayerWiki": "https://wiki.vidolia.fr/fr/demon-slayer",
+    "bleachWiki": "https://wiki.vidolia.fr/fr/bleach"
   },
   "footer": {
   "description": "Une communauté de jeu de rôle immersive où la créativité et l'imagination prennent vie à travers des univers fascinants.",

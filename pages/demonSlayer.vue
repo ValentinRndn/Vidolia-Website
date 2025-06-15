@@ -17,18 +17,18 @@
         <p class="text-gray-300 max-w-2xl text-center text-xl mt-4">{{ $t('home.hero.subtitle') }}</p>
         
         <div class="flex gap-6 mt-8">
-          <a href="steam://connect/node01.vidolia.fr:27022" target="_blank" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30">
+          <a :href="$t('links.play')" target="_blank" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
               <path fill="currentColor" d="M7 6v12l10-6z"/>
             </svg>
             {{ $t('home.hero.play') }}
           </a>
-          <NuxtLink to="https://vidolia.gitbook.io/vidolia" target="_blank" class="px-6 py-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50">
+          <a :href="$t('links.demonSlayerWiki')" target="_blank" class="px-6 py-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
               <path fill="currentColor" d="M19 2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14m-2 3a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1m0 4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1z"/>
             </svg>
             {{ $t('home.hero.wiki') }}
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>
@@ -197,12 +197,12 @@
                     </div>
                   </div>
                   
-                  <NuxtLink to="https://vidolia.gitbook.io/vidolia" target="_blank" class="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30">
+                  <a :href="$t('links.demonSlayerWiki')" target="_blank" class="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30">
                     <span>{{ $t('home.wiki.consult') }}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="transform group-hover:translate-x-1 transition-all duration-300">
                       <path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z"/>
                     </svg>
-                  </NuxtLink>
+                  </a>
                 </div>
               </div>
             </div>
@@ -223,14 +223,14 @@
         <p class="text-gray-300 mb-8 max-w-2xl">{{ $t('home.cta.subtitle') }}</p>
         
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="steam://connect/node01.vidolia.fr:27022" target="_blank" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 text-lg font-medium">
+          <a :href="$t('links.play')" target="_blank" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 text-lg font-medium">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
               <path fill="currentColor" d="M7 6v12l10-6z"/>
             </svg>
             {{ $t('home.cta.start') }}
           </a>
           
-          <a href="https://discord.gg/vidoliads" target="_blank" class="px-8 py-4 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50 text-lg font-medium">
+          <a :href="$t('links.discord')" target="_blank" class="px-8 py-4 bg-navy-800 hover:bg-navy-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 border border-blue-500/30 hover:border-blue-500/50 text-lg font-medium">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white">
               <path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/>
             </svg>

@@ -1,0 +1,209 @@
+{
+  "hero": {
+    "welcome": "Hoş geldiniz",
+    "description": "Benzersiz GMod sunucumuzla Demon Slayer evrenine dalın. Şeytanlarla savaşın, avcılara katılın ve sürükleyici bir RP deneyimi yaşayın.",
+    "play": "Oyna",
+    "discord": "Discord"
+  },
+  "servers": {
+    "title1": "Sunucu #1",
+    "description1": "Ana RP sunucumuzla Demon Slayer evrenine dalın. Karakterinizi geliştirin ve destansı görevlere katılın.",
+    "title2": "Sunucu #2",
+    "description2": "Ana RP sunucumuzla Demon Slayer evrenine dalın. Karakterinizi geliştirin ve destansı görevlere katılın.",
+    "online": "Çevrimiçi:"
+  },
+  "payment": {
+    "security": "Güvenli ödeme",
+    "with": "Tebex ile",
+    "methods": "Mastercard, Visa, Paypal ve daha fazlası...",
+    "shop": "Mağaza"
+  },
+  "about": {
+    "vidolia": "Vidolia",
+    "title": "Demon Slayer dünyasına dayanan bir Garry's mod topluluğu",
+    "description1": "Sunucuda bir şeytan veya avcı olarak rol oynayabilir, görevleri tamamlayabilir ve hatta birbirinizle savaşabilirsiniz. Gücünüzü gösterin ve etkinliklerde üstünlüğünüzü kanıtlayın! Peki kim daha güçlü olacak, insan yiyenler mi yoksa şeytan avcıları mı?",
+    "description2": "Sunucumuz size olağanüstü bir oyun deneyimi sunmak için tamamen kendi ellerimizle yaratıldı!"
+  },
+  "team": {
+    "title": "Ekibimiz",
+    "founder": "Kurucu",
+    "supervisor": "Süpervizör",
+    "responsable-communication": "İletişim Sorumlusu",
+    "responsable-developer": "Geliştirici Sorumlusu",
+    "responsable-design": "Oyun Tasarım Sorumlusu",
+    "members": [
+      {
+        "id": "kogui",
+        "name": "Kogui",
+        "image": "/images/staff_fr/kogui.webp",
+        "role": "founder"
+      },
+      {
+        "id": "hori",
+        "name": "Hori",
+        "image": "/images/staff_fr/hori.jpg",
+        "role": "founder"
+      },
+      {
+        "id": "cyrex",
+        "name": "Cyrex",
+        "image": "/images/staff_tr/kogui.webp",
+        "role": "Project Owner"
+      },
+      {
+        "id": "mcenzoo",
+        "name": "McEnzoo",
+        "image": "/images/staff_tr/liam.jpg",
+        "role": "Project Founder"
+      },
+      {
+        "id": "chawly",
+        "name": "Chawly",
+        "image": "/images/staff_tr/gyomei.webp",
+        "role": "Project Founder"
+      },
+      {
+        "id": "drynn",
+        "name": "Drynn",
+        "image": "/images/staff_tr/hori.jpg",
+        "role": "Üst Yönetim"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "title": "Demon Slayer RP",
+      "subtitle": "Şeytan avcıları ile Muzan'ın şeytani güçleri arasındaki savaşa katılın. Nefes tekniklerinizi geliştirin ve kendi efsanenizi yaratın.",
+      "play": "Şimdi oyna",
+      "wiki": "Wiki"
+    },
+    "welcome": {
+      "title": "Vidolia Demon Slayer'a Hoş Geldiniz",
+      "paragraph1": "Demon Slayer RP sunucumuz sizi Koyoharu Gotouge'nin eserinden ilham alan sürükleyici bir evrene sürükler. Şeytan avcıları ve şeytanlar arasında tarafınızı seçin, yeteneklerinizi geliştirin ve destansı görevlere katılın.",
+      "paragraph2": "Bir avcı olarak, farklı nefes tekniklerinde ustalaşın ve insanlığı korumak için savaşın. Bir şeytan olarak, şeytani sanatlarınızı geliştirin ve Muzan Kibutsuji'ye mutlak güç arayışında hizmet edin.",
+      "paragraph3": "Moderasyon ekibimiz size kaliteli bir RP deneyimi sunmak için burada, düzenli etkinlikler ve sürekli gelişen bir evren ile.",
+      "explore": "Keşfedilecek bir dünya",
+      "exploreDesc": "İkonik yerleri keşfedin ve bu acımasız evrende kendi yolunuzu çizin."
+    },
+    "resources": {
+      "title": "Önemli Kaynaklar",
+      "subtitle": "Maceranıza başlamak veya evren hakkındaki bilginizi derinleştirmek için ihtiyacınız olan her şey.",
+      "rules": "Kurallar",
+      "general": "Genel Kurallar",
+      "generalDesc": "Sunucuda uyulması gereken genel kurallar",
+      "demons": "Şeytan Kuralları",
+      "demonsDesc": "Şeytan oynamak için özel kurallar",
+      "slayers": "Avcı Kuralları",
+      "slayersDesc": "Şeytan avcıları için özel kurallar"
+    },
+    "wiki": {
+      "title": "Demon Slayer Wiki",
+      "subtitle": "Evren hakkında her şeyi bilin",
+      "description": "Kapsamlı wiki'miz Demon Slayer dünyası, nefes teknikleri, şeytani sanatlar, rütbeler ve daha fazlası hakkında tüm bilgileri içerir.",
+      "feature1": "Yeni başlayanlar rehberi",
+      "feature2": "Nefes teknikleri",
+      "feature3": "Şeytani sanatlar",
+      "feature4": "SSS ve RP Rehberi",
+      "consult": "Wiki'ye bak"
+    },
+    "cta": {
+      "title": "Maceraya katılmaya hazır mısınız?",
+      "subtitle": "Dünya şeytani güçlerle savaşacak kahramanlara ihtiyaç duyuyor. Efsanevi bir şeytan avcısı veya güçlü bir şeytan olun ve kendi hikayenizi yazın.",
+      "start": "Maceraya başla",
+      "discord": "Discord'a katıl"
+    }
+  },
+  "bleach": {
+    "hero": {
+      "title": "Bleach RP",
+      "subtitle": "Shinigami'ler ve Hollow'lar arasındaki savaşa katılın. Zanpakutō'nuzu geliştirin ve Soul Society'de bir efsane olun.",
+      "play": "Şimdi oyna",
+      "wiki": "Wiki"
+    },
+    "welcome": {
+      "title": "Vidolia Bleach'e Hoş Geldiniz",
+      "paragraph1": "Bleach RP sunucumuz sizi Tite Kubo'nun eserinden ilham alan büyüleyici bir evrene sürükler. Shinigami, Quincy veya Arrancar arasında fraksiyonunuzu seçin, yeteneklerinizi geliştirin ve destansı maceralara katılın.",
+      "paragraph2": "Bir Shinigami olarak, Zanpakutō'nuzu ustalaşın ve ruhları Hollow'lardan korumak için savaşın. Bir Arrancar olarak, Resurrección'unuzu geliştirin ve Aizen'i güç arayışında takip edin.",
+      "paragraph3": "Moderasyon ekibimiz düzenli etkinlikler ve sürekli gelişen bir evren ile kaliteli bir RP deneyimi sağlar.",
+      "explore": "Keşfedilecek bir dünya",
+      "exploreDesc": "Soul Society ve Hueco Mundo gibi ikonik yerleri keşfedin ve bu büyüleyici evrende kendi yolunuzu çizin."
+    },
+    "resources": {
+      "title": "Önemli Kaynaklar",
+      "subtitle": "Maceranıza başlamak veya evren hakkındaki bilginizi derinleştirmek için ihtiyacınız olan her şey.",
+      "rules": "Kurallar",
+      "general": "Genel Kurallar",
+      "generalDesc": "Sunucuda uyulması gereken küresel kurallar",
+      "demons": "Hollow Kuralları",
+      "demonsDesc": "Hollow veya Arrancar oynamak için özel kurallar",
+      "slayers": "Shinigami Kuralları",
+      "slayersDesc": "Shinigami'ler için özel kurallar"
+    },
+    "wiki": {
+      "title": "Bleach Wiki",
+      "subtitle": "Evren hakkında her şeyi bilin",
+      "description": "Kapsamlı wiki'miz Bleach dünyası, Zanpakutō'lar, Kidō teknikleri, Shinigami rütbeleri ve daha fazlası hakkında tüm bilgileri içerir.",
+      "feature1": "Yeni başlayanlar rehberi",
+      "feature2": "Kidō teknikleri",
+      "feature3": "Hollow yetenekleri",
+      "feature4": "SSS ve RP Rehberi",
+      "consult": "Wiki'ye bak"
+    },
+    "cta": {
+      "title": "Maceraya katılmaya hazır mısınız?",
+      "subtitle": "Soul Society Hollow'larla savaşacak kahramanlara ihtiyaç duyuyor. Efsanevi bir Shinigami veya güçlü bir Arrancar olun ve kendi hikayenizi yazın.",
+      "start": "Maceraya başla",
+      "discord": "Discord'a katıl"
+    }
+  },
+  "boutique": {
+    "bannerTitle1": "Bizim ",
+    "bannerTitle2": "Mağaza",
+    "playButton": "Oyna",
+    "discordButton": "Discord",
+    "welcomeTitle": "Mağazamıza hoş geldiniz",
+    "welcomeText": "Mağazamız oyun deneyiminizi geliştirmek için özel ürünler sunar. Tüm satın alımlarınız sunucunun gelişimine katkıda bulunur ve kaliteli bir deneyim sunmamızı sağlar.",
+    "chooseServerTitle": "Sunucunuzu seçin",
+    "demonSlayerTitle": "Demon Slayer",
+    "demonSlayerDescription": "Güçlü bir şeytan avcısı olun ve şeytanlarla savaşın. Nefes tekniklerinde ustalaşın ve benzersiz tarzınızı geliştirin.",
+    "serverStatus": "Sunucu aktif",
+    "exploreButton": "Mağazayı keşfet",
+    "bleachTitle": "Bleach",
+    "bleachDescription": "Güçlü bir Shinigami olun ve Hollow'larla savaşın. Zanpakutō'nuzu ustalaşın, Bankai'nizi geliştirin ve Soul Society'yi koruyun."
+  },
+  "navbar": {
+    "brand": "Vidolia",
+    "lang": "Dil",
+    "servers": "Sunucular",
+    "demonSlayer": "Demon Slayer",
+    "bleach": "Bleach",
+    "players": "oyuncular",
+    "shop": "Mağaza",
+    "login": "Giriş"
+  },
+  "links": {
+    "play": "steam://connect/node01.vidolia.fr:27022",
+    "discord": "https://discord.gg/vidoliads",
+    "wiki": "https://wiki.vidolia.fr/tr",
+    "shop": "https://boutique.vidolia.fr/tr",
+    "demonSlayerWiki": "https://wiki.vidolia.fr/tr/demon-slayer",
+    "bleachWiki": "https://wiki.vidolia.fr/tr/bleach"
+  },
+  "footer": {
+    "description": "Yaratıcılık ve hayal gücünün büyüleyici evrenler aracılığıyla hayat bulduğu sürükleyici bir rol yapma topluluğu.",
+    "navigation": "Navigasyon",
+    "home": "Ana Sayfa",
+    "demonSlayer": "Demon Slayer RP",
+    "bleach": "Bleach RP",
+    "shop": "Mağaza",
+    "rules": "Kurallar",
+    "servers": "Sunucular",
+    "online": "Çevrimiçi",
+    "playersConnected": "Bağlı oyuncular",
+    "copyright": "© 2025 Vidolia. Tüm hakları saklıdır.",
+    "legalNotice": "Yasal bildirim",
+    "privacyPolicy": "Gizlilik politikası",
+    "termsOfService": "Kullanım şartları",
+    "contact": "İletişim"
+  }
+} 
